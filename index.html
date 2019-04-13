@@ -6,50 +6,130 @@
   <meta http-equiv='X-UA-Compatible' content='IE=edge'>
   <title>Maven Consulting</title>
   <meta name='viewport' content='width=device-width, initial-scale=1'>
-  <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
-  <script src='main.js'></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles/uikit.css'>
+  <script src='js/uikit.min.js'></script>
+  <script src='js/uikit-icons.min.js'></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
+  <script src='js/main.js'></script>
 </head>
 
 <body>
   <!-- Navbar Section -->
-  <section>
+  <section class="navbar-section">
     <h1>Logo</h1>
     <h1>Maven Consulting</h1>
-    <a href="#">Nav Item 1</a>
-    <a href="#">Nav Item 2</a>
-    <a href="#">Nav Item 3</a>
-    <a href="#">Nav Item 4</a>
+    <div class="navbar">
+      <a href="#">Nav Item 1</a>
+      <a href="#">Nav Item 2</a>
+      <a href="#">Nav Item 3</a>
+      <a href="#">Nav Item 4</a>
+    </div>
   </section>
 
 
   <!-- Jumbotron Section -->
-  <section>
-    Jumbotron Section
+  <section class="jumbotron">
+    <div class="jumbotron-items-div">
+      <div class="jumbotron-item">
+        <img class="jumbotron-item-img" src="images/brand-design2.png" alt="Maven Consulting Digital Marketing" />
+        <h2>Digital Marketing</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea unde atque, facere expedita molestias,
+          laboriosam omnis modi. Iste nam repellat in aperiam dolor maiores libero vitae vero suscipit amet! Ea?</p>
+        <button class="jumbotron-item-button">Learn More</button>
+      </div>
+      <div class="jumbotron-item">
+        <img class="jumbotron-item-img" src="images/web-design2.png"
+          alt="Maven Consulting Website/Application Development" />
+        <h2>Website/Application Development</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta provident nesciunt libero voluptatem
+          accusamus, cupiditate molestias voluptas distinctio odit officiis quaerat optio modi possimus ea aliquam, et
+          hic illo.</p>
+        <button class="jumbotron-item-button">Learn More</button>
+      </div>
+      <div class="jumbotron-item">
+        <img class="jumbotron-item-img" src="images/logo-design2.png" alt="Maven Consulting Logo Design" />
+        <h2>Logo Design</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur aperiam distinctio pariatur ipsa velit
+          maxime optio, ea quibusdam nihil repudiandae deserunt temporibus aliquid omnis nostrum necessitatibus ratione
+          facere placeat natus.</p>
+        <button class="jumbotron-item-button">Learn More</button>
+      </div>
+    </div>
   </section>
 
   <!-- We Stand By Your Side Section -->
-  <section>
-    We Stand By Your Side Section
+  <section class="we-stand-with-you-section">
+    <!-- <FontAwesomeIcon class="we-stand-icon" icon="hands-helping" /> -->
+    <div class="we-stand-text-part">
+      <h1>We Stand By Your Side</h1>
+      <p>We're not just designers and developers. We are partners, who stand by your side every step of the
+        way&mdash;from design, to launch.</p>
+    </div>
   </section>
 
   <!-- Testimonials Section -->
-  <!-- <section>
+  <!-- <section class="testimonials">
     Testimonials Section
   </section> -->
 
   <!-- Portfolio Section -->
-  <section>
-    Portfolio Section
+  <section class="portfolio-sample-section-wrapper">
+    <h1 class="our-work-title">Our Work</h1>
+    <div class="portfolio-sample-section">
+      <div class="portfolio-sample-item">
+        <img class="portfolio-item-child" src="images/BabyBearPortfolio.jpg" alt="Maven Consulting Portfolio Item" />
+      </div>
+      <div class="portfolio-sample-item">
+        <img class="portfolio-item-child" src="images/JupiterPortfolio.jpg" alt="Maven Consulting Portfolio Item" />
+      </div>
+    </div>
+    <div class="portfolio-sample-section">
+      <div class="portfolio-sample-item">
+        <img class="portfolio-item-child" src="images/PoseidonPortfolio.jpg" alt="Maven Consulting Portfolio Item" />
+      </div>
+      <div class="portfolio-sample-item">
+        <img class="portfolio-item-child" src="images/ImpizePortfolio.jpg" alt="Maven Consulting Portfolio Item" />
+      </div>
+    </div>
   </section>
 
   <!-- Discovery Session -->
-  <section>
-    Discovery Session
+  <section class="discovery-section-wrapper">
+    <div class="discovery-section">
+      <h1>Discovery Session</h1>
+      <p class="free-30min-session">Get a free 30 minute discovery session.</p>
+      <div class="flex">
+        <div class="discovery-input-label-section">
+          <span class="discovery-input-label">Your Name</span>
+          <input class="discovery-input-name" type="text" placeholder="" />
+        </div>
+        <div class="discovery-input-label-section">
+          <span class="discovery-input-label">Your Business's Name</span>
+          <input class="discovery-input-name" type="text" placeholder="" />
+        </div>
+      </div>
+      <div class="discovery-input-section2">
+        <div class="discovery-input-label-section">
+          <span class="discovery-input-label">Your Email</span>
+          <input class="discovery-input" type="email" placeholder="" />
+        </div>
+        <div class="discovery-input-label-section">
+          <span class="discovery-input-label"> What Brought You Here?</span>
+          <textarea class="discovery-textarea-input" name="" cols="30" rows="10" placeholder=""></textarea>
+        </div>
+        <div class="discovery-input-label-section">
+          <span class="discovery-input-label">What Are Your Top Priorities?</span>
+          <textarea class="discovery-textarea-input" name="" cols="30" rows="10" placeholder=""></textarea>
+        </div>
+      </div>
+      <button class="discovery-session-button">Schedule Discovery Session</button>
+      <p>Places are strictly limited so please provide as much detail as possible!</p>
+    </div>
   </section>
 
   <!-- Footer Section -->
-  <section>
-    Footer Section
+  <section class="footer">
+    <p class="copywright privacy-footer-link">&copy; Maven Consulting LLC, 2019</p>
   </section>
 </body>
 

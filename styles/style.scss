@@ -1,0 +1,362 @@
+@import '_vars.scss';
+
+.footer {
+  border-top: solid 1px $gray-500;
+  margin-top: 3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.we-stand-with-you-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+//    background-color: $gray-100;
+  width: 100%;
+  padding-top: 4em;
+  padding-bottom: 4em;
+//    border: solid 1px $gray-100;
+  
+  
+  .we-stand-icon {
+      border: solid 3px $smokey-black;
+      border-radius: 50%;
+      height: 5em;
+      width: 5em;
+//        background-color: coral;
+  }
+  
+  .we-stand-text-part {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-left: 1em;
+//                background-color: coral;
+      
+      p {
+          font-size: 110%;
+          font-weight: 600;
+//            color: gray;
+      }
+  }
+}
+
+
+.portfolio-sample-section-wrapper {
+  margin-top: 5em;
+  // background-color: $mint-green;
+
+  .portfolio-sample-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+  /*    margin-bottom: 10em;*/
+  }
+  
+  .our-work-title {
+    // margin-bottom: -2em;
+    position: relative;
+    z-index: 1;
+    text-align: center;
+  }
+  
+  .portfolio-sample-item {
+  /*    background-color: lightgray;*/
+    width: 400px;
+    height: 400px;
+    margin-left: 1em;
+    margin-top: 1em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .portfolio-item-child {
+    background-color: $smoothie-red;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+
+.discovery-section-wrapper { 
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+//    background-color: $lollipop-blue;
+
+    .discovery-section {
+        background-color: #e9ecef;
+        padding-top: 5em;
+        padding-bottom: 6em;
+        margin-top: 10em;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        width: 80%;
+        border-radius: 30px;
+        text-align: center;
+        
+        .free-30min-session {
+            margin-top: -0.5em;
+            margin-bottom: 2em;
+        }
+
+        .discovery-session-button {
+            width: 25em;
+            height: 3em;
+            border-radius: 30px;
+            font-size: 1.2em;
+            font-weight: 700;
+            cursor: pointer;
+            color: #fff;
+            border: none;
+            background-color: coral;
+            margin-top: 2em;
+            margin-bottom: 0.2em;
+        }
+
+        .discovery-session-button:hover {
+            opacity: 0.9;
+        }
+
+        .discovery-input {
+            width: 42.4em;
+            height: 3em;
+            padding-left: 1em;
+            margin-top: 1em;
+            margin-left: 1em;
+            border-radius: 3px;
+            border: solid 1px #adb5bd;
+        }
+
+        .discovery-input-name {
+            width: 20em;
+            height: 3em;
+            padding-left: 1em;
+            margin-top: 1em;
+            border-radius: 3px;
+            border: solid 1px #adb5bd;
+        }
+
+        .discovery-input-name:first-child {
+            margin-right: 1em;
+        }
+
+        .discovery-textarea-input {
+            width: 42.4em;
+            height: 10em;
+            padding-left: 1em;
+            margin-top: 1em;
+            border-radius: 3px;
+            border: solid 1px #adb5bd;
+        }
+
+        .discovery-input-label {
+            align-self: flex-start;
+            color: #3D3D3D;
+        }
+
+        .flex {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            /*    background-color: pink;*/
+
+
+            .discovery-input-label-section {
+                display: flex;
+                justify-content: center;
+                flex-direction: column; 
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 1em;
+
+                &:first-child {
+                    margin-right: 1em;
+                }
+            }  
+        }
+
+
+        .discovery-input-section2 {
+//            background-color: pink;
+            width: 41em;
+            //            width: 36.4em;
+
+            .discovery-textarea-input {
+                width: 100%;
+                height: 10em;
+                padding-left: 1em;
+                margin-top: 1em;
+                border-radius: 3px;
+                border: solid 1px #adb5bd;
+                //                background-color: coral;
+            }
+
+            .discovery-input-label-section {
+                display: flex;
+                justify-content: center;
+                flex-direction: column; 
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 1em;
+                width: 100%;
+
+                &:first-child {
+                    margin-right: 1em;
+                }
+
+                .discovery-input {
+                    width: 100%;
+                    height: 3em;
+                    padding-left: 1em;
+                    margin-top: 1em;
+                    margin-left: 0;
+                    border-radius: 3px;
+                    border: solid 1px #adb5bd;
+//                    background-color: coral;
+                }
+            } 
+        }
+    }
+}
+
+
+
+// intro jumbotron
+.jumbotron {
+  /*    background-color: lightgray;*/
+  /*    padding-top: 3em;*/
+  padding-bottom: 5em;
+  margin-top: 1em;
+
+
+  .jumbotron-items-div {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      align-items: center;
+      align-content: space-around;
+      flex-wrap: wrap;
+
+      .jumbotron-item {
+          /*    background-color: coral;*/
+          /*    height: 18em;*/
+          width: 23em;
+          margin-left: 1em;
+          /*    margin-top: 1em;*/
+          padding-top: 2em;
+          text-align: center;
+          
+          p {
+//                color: coral;
+              margin-top: 1em;
+          }
+
+          .jumbotron-item-button {
+              color: #fff;
+              background-color: $lollipop-blue;
+              border: none;
+              font-size: 1em;
+              height: 2.5em;
+              width: 10em;
+              border-radius: 30px;
+              cursor: pointer;
+              margin-top: 1em;
+          }
+
+          .jumbotron-item-button:hover {
+              opacity: 0.8;
+          }
+
+          .jumbotron-item-img {
+              width: 150px;
+              height: 150px;
+          }
+      }  
+  }
+}
+
+
+
+@media all and (max-width: 870px) and (min-width: 400px) {
+    .discovery-section {
+        width: 90%;
+        /*        background-color: coral;*/
+    }
+}
+
+@media all and (max-width: 750px) and (min-width: 400px) {
+    .discovery-section {
+        width: 90%;
+        /*        background-color: blue;*/
+    }
+
+    .flex {
+        flex-direction: column;
+        /*        background-color: green;*/
+        width: 70%;
+    }
+
+    .discovery-input-section2 {
+        /*        background-color: green;*/
+        width: 70%;
+    }
+
+    .discovery-input-label-section:first-child {
+        margin-right: 0;
+    }
+
+    .discovery-input-label-section {
+        width: 100%;
+    }
+
+    .discovery-input-name {
+        width: 100%;
+    }
+
+    .discovery-input-label {
+        align-self: flex-start;
+        color: #3D3D3D;
+    }
+
+    .discovery-input {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .discovery-textarea-input {
+        width: 100%;
+    }
+
+    .discovery-session-button {
+        width: 90%;
+    }
+}
+
+@media all and (max-width: 550px) and (min-width: 400px) {
+    .discovery-section {
+        width: 90%;
+        /*        background-color: orange;*/
+    }
+}
+
