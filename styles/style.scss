@@ -1,6 +1,6 @@
 @import '_vars.scss';
-@import './_base.scss';
-@import './_normalize.scss';
+@import '_base.scss';
+@import '_normalize.scss';
 
 @font-face {
   font-family: Westcraft;
@@ -42,7 +42,7 @@ img {
 input {
   color: $smokey-black;
   padding-left: 0.3em;
-  height: 1.8em;
+  height: 2.5em;
 }
 
 ::placeholder {
@@ -75,6 +75,7 @@ textarea {
   padding-top: 0.3em;
   border: 1px solid $gray-400;
   //    max-width: 90%;
+  resize: vertical;
 }
 
 select {
@@ -85,7 +86,7 @@ select {
 
 
 
-
+// Footer Section
 .footer {
   border-top: solid 1px $gray-500;
   // background-color: $smokey-black;
@@ -100,6 +101,11 @@ select {
   flex-wrap: wrap;
 }
 
+
+
+
+
+// We Stand With Your Side Section
 .we-stand-with-you-section {
   display: flex;
   justify-content: center;
@@ -112,13 +118,24 @@ select {
   padding-bottom: 4em;
 //    border: solid 1px $gray-100;
   
-  
-  .we-stand-icon {
-      border: solid 3px $smokey-black;
-      border-radius: 50%;
-      height: 5em;
-      width: 5em;
-//        background-color: coral;
+  .we-stand-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    border: solid 3px $smokey-black;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+
+    .we-stand-icon {
+      // border: solid 3px $smokey-black;
+      // border-radius: 50%;
+      // height: 6rem;
+      // width: 6rem;
+      font-size: 370%;
+    }
   }
   
   .we-stand-text-part {
@@ -129,16 +146,23 @@ select {
       flex-wrap: wrap;
       margin-left: 1em;
 //                background-color: coral;
+
+      h1 {
+        // font-size: 52px;
+        font-size: 3.2rem;
+      }
       
       p {
           font-size: 110%;
-          font-weight: 600;
+          font-weight: 300;
 //            color: gray;
       }
   }
 }
 
 
+
+// Portfolio Setion
 .portfolio-sample-section-wrapper {
   margin-top: 5em;
   // background-color: $mint-green;
@@ -178,6 +202,7 @@ select {
 }
 
 
+// Discovery Session Section
 .discovery-section-wrapper { 
     display: flex;
     justify-content: center;
@@ -332,11 +357,11 @@ select {
 
 // intro jumbotron
 .jumbotron {
-  /*    background-color: lightgray;*/
+  background-color: $gray-100;
   /*    padding-top: 3em;*/
   padding-bottom: 5em;
   margin-top: 1em;
-  border-top: 1px solid $gray-500;
+  // border-top: 1px solid $gray-500;
 
 
   .jumbotron-items-div {
@@ -429,12 +454,215 @@ select {
 
 
 
+
+// About Page
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: lollipop-blue;
+  margin-top: 2rem;
+
+  .about-us-body {
+    width: 70%;
+  }
+}
+
+
+
+
+// Contact Us Page
+.contact-us-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+
+  .contact-us-intro-text {
+    width: 70%;
+  }
+
+  .contact-us-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $gray-100;
+    width: 70%;
+    border-radius: 3px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem;
+
+    .contact-us-mail-icon-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+
+      border: solid 2px $smokey-black;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%;
+    }
+
+    form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      // background-color: $smoothie-red;
+      width: 35rem;
+      margin-top: 3rem;
+
+      input {
+        height: 2.5em;
+        width: 100%;
+        margin-bottom: 1em;
+      }
+
+      textarea {
+        width: 100%;
+        margin-bottom: 2em;
+        // height: 10rem;
+        resize: vertical;
+      }
+
+
+      .contact-us-button {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        background-color: $lollipop-blue;
+        color: #fff;
+        border: none;
+        font-size: 110%;
+
+        &:hover {
+          opacity: 0.9;
+        }
+      }
+      .contact-us-real-button {
+        position: relative;
+        right: 100em;
+        visibility: hidden;
+      }
+    }
+  }
+}
+
+
+
+
+// Services Page
+.services-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  
+  .services-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 9rem;
+
+    p {
+      width: 70%;
+    }
+
+    &:last-child {
+      color: $smoothie-red;
+      margin-bottom: 0;
+    }
+  }
+}
+
+
+
+
+
+.heading-large {
+  font-size: 3.2rem;
+}
+
+
+
 // Start of breakpoints
+@media all and (max-width: 900px) and (min-width: 870px) {
+  .contact-us-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+  
+    .contact-us-body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      // background-color: $mint-green;
+      width: 70%;
+      border-radius: 3px;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+      form {
+        width: 90%;
+    }
+  }
+}
+}
+
 @media all and (max-width: 870px) and (min-width: 400px) {
     .discovery-section {
         width: 90%;
         /*        background-color: coral;*/
     }
+
+    .contact-us-section {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+    
+      .contact-us-body {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        // background-color: $berry-purple;
+        width: 90%;
+        border-radius: 3px;
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+        form {
+          width: 90%;
+      }
+    }
+  }
 }
 
 @media all and (max-width: 750px) and (min-width: 400px) {
@@ -483,6 +711,8 @@ select {
     .discovery-session-button {
         width: 90%;
     }
+
+    
 }
 
 @media all and (max-width: 550px) and (min-width: 400px) {

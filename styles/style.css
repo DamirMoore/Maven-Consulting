@@ -392,7 +392,7 @@ img {
 input {
   color: #3D3D3D;
   padding-left: 0.3em;
-  height: 1.8em; }
+  height: 2.5em; }
 
 ::placeholder {
   color: rgba(100, 100, 100, 0.5); }
@@ -417,7 +417,8 @@ textarea {
   color: #3D3D3D;
   padding-left: 0.5em;
   padding-top: 0.3em;
-  border: 1px solid rgba(100, 100, 100, 0.4); }
+  border: 1px solid rgba(100, 100, 100, 0.4);
+  resize: vertical; }
 
 select {
   color: #3D3D3D; }
@@ -442,11 +443,18 @@ select {
   width: 100%;
   padding-top: 4em;
   padding-bottom: 4em; }
-  .we-stand-with-you-section .we-stand-icon {
+  .we-stand-with-you-section .we-stand-icon-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
     border: solid 3px #3D3D3D;
-    border-radius: 50%;
-    height: 5em;
-    width: 5em; }
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%; }
+    .we-stand-with-you-section .we-stand-icon-wrapper .we-stand-icon {
+      font-size: 370%; }
   .we-stand-with-you-section .we-stand-text-part {
     display: flex;
     justify-content: center;
@@ -454,9 +462,11 @@ select {
     align-items: center;
     flex-wrap: wrap;
     margin-left: 1em; }
+    .we-stand-with-you-section .we-stand-text-part h1 {
+      font-size: 3.2rem; }
     .we-stand-with-you-section .we-stand-text-part p {
       font-size: 110%;
-      font-weight: 600; }
+      font-weight: 300; }
 
 .portfolio-sample-section-wrapper {
   margin-top: 5em; }
@@ -594,11 +604,10 @@ select {
           border: solid 1px #adb5bd; }
 
 .jumbotron {
-  /*    background-color: lightgray;*/
+  background-color: rgba(100, 100, 100, 0.1);
   /*    padding-top: 3em;*/
   padding-bottom: 5em;
-  margin-top: 1em;
-  border-top: 1px solid rgba(100, 100, 100, 0.5); }
+  margin-top: 1em; }
   .jumbotron .jumbotron-items-div {
     display: flex;
     justify-content: space-around;
@@ -659,10 +668,150 @@ select {
         opacity: 0.9;
         text-decoration: none; }
 
+.about-us-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  background-color: lollipop-blue;
+  margin-top: 2rem; }
+  .about-us-section .about-us-body {
+    width: 70%; }
+
+.contact-us-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 3rem; }
+  .contact-us-section .contact-us-intro-text {
+    width: 70%; }
+  .contact-us-section .contact-us-body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgba(100, 100, 100, 0.1);
+    width: 70%;
+    border-radius: 3px;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    margin-top: 2rem; }
+    .contact-us-section .contact-us-body .contact-us-mail-icon-wrapper {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      border: solid 2px #3D3D3D;
+      width: 5rem;
+      height: 5rem;
+      border-radius: 50%; }
+    .contact-us-section .contact-us-body form {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 35rem;
+      margin-top: 3rem; }
+      .contact-us-section .contact-us-body form input {
+        height: 2.5em;
+        width: 100%;
+        margin-bottom: 1em; }
+      .contact-us-section .contact-us-body form textarea {
+        width: 100%;
+        margin-bottom: 2em;
+        resize: vertical; }
+      .contact-us-section .contact-us-body form .contact-us-button {
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        padding-left: 5rem;
+        padding-right: 5rem;
+        background-color: #33BDB5;
+        color: #fff;
+        border: none;
+        font-size: 110%; }
+        .contact-us-section .contact-us-body form .contact-us-button:hover {
+          opacity: 0.9; }
+      .contact-us-section .contact-us-body form .contact-us-real-button {
+        position: relative;
+        right: 100em;
+        visibility: hidden; }
+
+.services-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap; }
+  .services-section .services-item {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 9rem; }
+    .services-section .services-item p {
+      width: 70%; }
+    .services-section .services-item:last-child {
+      color: #CE5667;
+      margin-bottom: 0; }
+
+.heading-large {
+  font-size: 3.2rem; }
+
+@media all and (max-width: 900px) and (min-width: 870px) {
+  .contact-us-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; }
+    .contact-us-section .contact-us-body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 70%;
+      border-radius: 3px;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      padding-left: 2rem;
+      padding-right: 2rem; }
+      .contact-us-section .contact-us-body form {
+        width: 90%; } }
 @media all and (max-width: 870px) and (min-width: 400px) {
   .discovery-section {
     width: 90%;
-    /*        background-color: coral;*/ } }
+    /*        background-color: coral;*/ }
+
+  .contact-us-section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap; }
+    .contact-us-section .contact-us-body {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      flex-wrap: wrap;
+      width: 90%;
+      border-radius: 3px;
+      padding-top: 8rem;
+      padding-bottom: 8rem;
+      padding-left: 2rem;
+      padding-right: 2rem; }
+      .contact-us-section .contact-us-body form {
+        width: 90%; } }
 @media all and (max-width: 750px) and (min-width: 400px) {
   .discovery-section {
     width: 90%;
