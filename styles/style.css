@@ -788,8 +788,7 @@ select {
         width: 90%; } }
 @media all and (max-width: 1060px) and (min-width: 950px) {
   .discovery-section-wrapper .discovery-section {
-    width: 90%;
-    background-color: coral; } }
+    width: 90%; } }
 @media all and (max-width: 950px) and (min-width: 750px) {
   .discovery-section-wrapper .discovery-section {
     width: 95%; }
