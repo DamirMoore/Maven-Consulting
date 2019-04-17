@@ -631,11 +631,23 @@ select {
 }
 }
 
-@media all and (max-width: 870px) and (min-width: 400px) {
+@media all and (max-width: 1060px) and (min-width: 950px) {
+  .discovery-section-wrapper  {
     .discovery-section {
-        width: 90%;
-        /*        background-color: coral;*/
+      width: 90%;
+      background-color: coral;
     }
+  }
+}
+
+@media all and (max-width: 950px) and (min-width: 750px) {
+    .discovery-section-wrapper  {
+      .discovery-section {
+        width: 95%;
+        // background-color: coral;
+      }
+    }
+    
 
     .contact-us-section {
       display: flex;
@@ -666,15 +678,20 @@ select {
 }
 
 @media all and (max-width: 750px) and (min-width: 400px) {
-    .discovery-section {
-        width: 90%;
-        /*        background-color: blue;*/
-    }
 
-    .flex {
+  .discovery-section-wrapper {
+    .discovery-section {
+      width: 90%;
+      // background-color: $mint-green;
+
+      .flex {
         flex-direction: column;
         /*        background-color: green;*/
         width: 70%;
+
+        .discovery-input-label-section:first-child {
+          margin-right: 0;
+      }
     }
 
     .discovery-input-section2 {
@@ -711,8 +728,8 @@ select {
     .discovery-session-button {
         width: 90%;
     }
-
-    
+  }
+  } 
 }
 
 @media all and (max-width: 550px) and (min-width: 400px) {

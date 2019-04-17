@@ -786,10 +786,13 @@ select {
       padding-right: 2rem; }
       .contact-us-section .contact-us-body form {
         width: 90%; } }
-@media all and (max-width: 870px) and (min-width: 400px) {
-  .discovery-section {
+@media all and (max-width: 1060px) and (min-width: 950px) {
+  .discovery-section-wrapper .discovery-section {
     width: 90%;
-    /*        background-color: coral;*/ }
+    background-color: coral; } }
+@media all and (max-width: 950px) and (min-width: 750px) {
+  .discovery-section-wrapper .discovery-section {
+    width: 95%; }
 
   .contact-us-section {
     display: flex;
@@ -812,41 +815,33 @@ select {
       .contact-us-section .contact-us-body form {
         width: 90%; } }
 @media all and (max-width: 750px) and (min-width: 400px) {
-  .discovery-section {
-    width: 90%;
-    /*        background-color: blue;*/ }
-
-  .flex {
-    flex-direction: column;
-    /*        background-color: green;*/
-    width: 70%; }
-
-  .discovery-input-section2 {
-    /*        background-color: green;*/
-    width: 70%; }
-
-  .discovery-input-label-section:first-child {
-    margin-right: 0; }
-
-  .discovery-input-label-section {
-    width: 100%; }
-
-  .discovery-input-name {
-    width: 100%; }
-
-  .discovery-input-label {
-    align-self: flex-start;
-    color: #3D3D3D; }
-
-  .discovery-input {
-    width: 100%;
-    margin-left: 0; }
-
-  .discovery-textarea-input {
-    width: 100%; }
-
-  .discovery-session-button {
-    width: 90%; } }
+  .discovery-section-wrapper .discovery-section {
+    width: 90%; }
+    .discovery-section-wrapper .discovery-section .flex {
+      flex-direction: column;
+      /*        background-color: green;*/
+      width: 70%; }
+      .discovery-section-wrapper .discovery-section .flex .discovery-input-label-section:first-child {
+        margin-right: 0; }
+    .discovery-section-wrapper .discovery-section .discovery-input-section2 {
+      /*        background-color: green;*/
+      width: 70%; }
+    .discovery-section-wrapper .discovery-section .discovery-input-label-section:first-child {
+      margin-right: 0; }
+    .discovery-section-wrapper .discovery-section .discovery-input-label-section {
+      width: 100%; }
+    .discovery-section-wrapper .discovery-section .discovery-input-name {
+      width: 100%; }
+    .discovery-section-wrapper .discovery-section .discovery-input-label {
+      align-self: flex-start;
+      color: #3D3D3D; }
+    .discovery-section-wrapper .discovery-section .discovery-input {
+      width: 100%;
+      margin-left: 0; }
+    .discovery-section-wrapper .discovery-section .discovery-textarea-input {
+      width: 100%; }
+    .discovery-section-wrapper .discovery-section .discovery-session-button {
+      width: 90%; } }
 @media all and (max-width: 550px) and (min-width: 400px) {
   .discovery-section {
     width: 90%;
