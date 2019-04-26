@@ -571,6 +571,14 @@ select {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
+  margin-top: 3rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
+
+  .services-intro-body {
+    text-align: center;
+    width: 70%;
+  }
   
   .services-item {
     display: flex;
@@ -580,12 +588,23 @@ select {
     flex-wrap: wrap;
     margin-bottom: 9rem;
 
+    .web-dev-title {
+      // color: $mint-green;
+      // border: solid 1px coral;
+      margin-bottom: -1.5rem;
+    }
+
     p {
       width: 70%;
+      text-align: center;
+    }
+
+    &:first-of-type {
+      margin-top: 5rem;
     }
 
     &:last-child {
-      color: $smoothie-red;
+      // color: $smoothie-red;
       margin-bottom: 0;
     }
   }
@@ -678,6 +697,17 @@ select {
 }
 
 @media all and (max-width: 750px) and (min-width: 400px) {
+  .services-section {
+    .services-intro-body {
+      width: 100%;
+    }
+
+    .services-item {
+      p {
+        width: 100%;
+      }
+    }
+  }
 
   .discovery-section-wrapper {
     .discovery-section {
