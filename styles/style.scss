@@ -269,8 +269,8 @@ width: 90%;
   flex-wrap: wrap;
   background-color: $lollipop-blue;
   color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
+  // padding-top: 1rem;
+  // padding-bottom: 1rem;
   margin-top: 4rem;
 
 
@@ -282,7 +282,7 @@ width: 90%;
     cursor: pointer;
     position: absolute;
     right: 1.5rem;
-    top: 1.8rem;
+    top: 2.5rem;
   }
 
   .discovery-sticky-button {
@@ -305,6 +305,14 @@ width: 90%;
 .make-sticky {
   position: sticky;
   bottom: 0;
+}
+
+.make-sticky-large {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
+}
+
+.make-sticky-small {
   padding-top: 1rem;
   padding-bottom: 1rem;
 }
@@ -600,8 +608,13 @@ width: 90%;
       align-items: center;
       align-content: space-around;
       flex-wrap: wrap;
+      margin-bottom: 2rem;
 
       .jumbotron-item {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
           /*    background-color: coral;*/
           /*    height: 18em;*/
           width: 23em;
@@ -627,8 +640,33 @@ width: 90%;
               margin-top: 1em;
           }
 
+          a {
+            color: #fff;
+              background-color: $lollipop-blue;
+              border: none;
+              display: flex;
+              align-self: center;
+              align-items: center;
+              justify-content: center;
+              text-align: center;
+              // font-size: 1em;
+              height: 2.5em;
+              width: 10rem;
+              // padding-top: 0.5rem;
+              // padding-bottom: 0.5rem;
+              border-radius: 30px;
+              cursor: pointer;
+              margin-top: 2em;
+          }
+
+          a:hover {
+            text-decoration: none;
+            opacity: 0.8;
+          }
+
           .jumbotron-item-button:hover {
               opacity: 0.8;
+              text-decoration: none;
           }
 
           .jumbotron-item-img {
@@ -818,16 +856,13 @@ width: 90%;
 
 
 // Services Page
-.services-section {
+.services-intro-section {
   display: flex;
   justify-content: center;
-  flex-direction: column;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 3rem;
-  margin-bottom: 2rem;
-  padding-left: 3rem;
-  padding-right: 3rem;
+  flex-direction: column;
+  background-color: $gray-100;
+  width: 100%;
 
   .our-services-heading {
     font-size: 250%;
@@ -837,6 +872,31 @@ width: 90%;
     text-align: center;
     width: 70%;
   }
+
+  .our-process-main-body {
+    display: flex;
+    flex-direction: column;
+
+    .our-process-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+  }
+}
+
+.services-section {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  // margin-top: 3rem;
+  margin-bottom: 2rem;
+  padding-left: 3rem;
+  padding-right: 3rem;
 
   .services-item {
     display: flex;
@@ -858,7 +918,7 @@ width: 90%;
     }
 
     &:first-of-type {
-      margin-top: 5rem;
+      margin-top: 3rem;
     }
 
     &:last-child {

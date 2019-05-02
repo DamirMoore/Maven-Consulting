@@ -543,8 +543,6 @@ select {
   flex-wrap: wrap;
   background-color: #33BDB5;
   color: #fff;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
   margin-top: 4rem; }
   .discovery-sticky p {
     align-self: center; }
@@ -552,7 +550,7 @@ select {
     cursor: pointer;
     position: absolute;
     right: 1.5rem;
-    top: 1.8rem; }
+    top: 2.5rem; }
   .discovery-sticky .discovery-sticky-button {
     border: solid 1px coral;
     border-radius: 30px;
@@ -568,7 +566,13 @@ select {
 
 .make-sticky {
   position: sticky;
-  bottom: 0;
+  bottom: 0; }
+
+.make-sticky-large {
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem; }
+
+.make-sticky-small {
   padding-top: 1rem;
   padding-bottom: 1rem; }
 
@@ -774,8 +778,13 @@ select {
     flex-direction: row;
     align-items: center;
     align-content: space-around;
-    flex-wrap: wrap; }
+    flex-wrap: wrap;
+    margin-bottom: 2rem; }
     .jumbotron .jumbotron-items-div .jumbotron-item {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
       /*    background-color: coral;*/
       /*    height: 18em;*/
       width: 23em;
@@ -795,8 +804,26 @@ select {
         border-radius: 30px;
         cursor: pointer;
         margin-top: 1em; }
-      .jumbotron .jumbotron-items-div .jumbotron-item .jumbotron-item-button:hover {
+      .jumbotron .jumbotron-items-div .jumbotron-item a {
+        color: #fff;
+        background-color: #33BDB5;
+        border: none;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        height: 2.5em;
+        width: 10rem;
+        border-radius: 30px;
+        cursor: pointer;
+        margin-top: 2em; }
+      .jumbotron .jumbotron-items-div .jumbotron-item a:hover {
+        text-decoration: none;
         opacity: 0.8; }
+      .jumbotron .jumbotron-items-div .jumbotron-item .jumbotron-item-button:hover {
+        opacity: 0.8;
+        text-decoration: none; }
       .jumbotron .jumbotron-items-div .jumbotron-item .jumbotron-item-img {
         width: 150px;
         height: 150px; }
@@ -917,21 +944,37 @@ select {
         right: 100em;
         visibility: hidden; }
 
+.services-intro-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgba(100, 100, 100, 0.1);
+  width: 100%; }
+  .services-intro-section .our-services-heading {
+    font-size: 250%; }
+  .services-intro-section .services-intro-body {
+    text-align: center;
+    width: 70%; }
+  .services-intro-section .our-process-main-body {
+    display: flex;
+    flex-direction: column; }
+    .services-intro-section .our-process-main-body .our-process-group {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      text-align: center; }
+
 .services-section {
   display: flex;
   justify-content: center;
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap;
-  margin-top: 3rem;
   margin-bottom: 2rem;
   padding-left: 3rem;
   padding-right: 3rem; }
-  .services-section .our-services-heading {
-    font-size: 250%; }
-  .services-section .services-intro-body {
-    text-align: center;
-    width: 70%; }
   .services-section .services-item {
     display: flex;
     justify-content: center;
@@ -945,7 +988,7 @@ select {
       width: 70%;
       text-align: center; }
     .services-section .services-item:first-of-type {
-      margin-top: 5rem; }
+      margin-top: 3rem; }
     .services-section .services-item:last-child {
       margin-bottom: 0; }
 
