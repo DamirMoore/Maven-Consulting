@@ -398,7 +398,8 @@ width: 90%;
 //    background-color: $lollipop-blue;
 
     .discovery-section {
-        background-color: #e9ecef;
+        // background-color: #e9ecef;
+        background-color: $gray-100;
         padding-top: 5em;
         padding-bottom: 6em;
         margin-top: 10em;
@@ -736,6 +737,10 @@ width: 90%;
   background-color: lollipop-blue;
   margin-top: 2rem;
 
+  .about-heading {
+    font-size: 250%;
+  }
+
   .about-us-body {
     width: 70%;
   }
@@ -764,11 +769,27 @@ width: 90%;
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+      // background-color: coral;
+
+      &:first-of-type {
+        // background-color: coral;
+        // background-color: #fff;
+        margin-bottom: 1rem;
+      }
 
       .our-values-group-item {
         width: 20rem;
         // background-color: coral;
         text-align: center;
+        align-self: flex-start;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        margin-bottom: 1rem;
+
+        h3 {
+          margin-top: 0.8rem;
+          margin-bottom: 0.8rem;
+        }
       }
     }
   }
@@ -913,12 +934,25 @@ width: 90%;
     .our-process-group {
       display: flex;
       flex-direction: row;
+      flex-wrap: wrap;
       justify-content: center;
       align-items: center;
-      text-align: center;
+      // background-color: coral;
+
+      &:first-of-type {
+        // background-color: coral;
+        // background-color: #fff;
+        margin-bottom: 1rem;
+      }
 
       .our-process-group-item {
         width: 20rem;
+        // background-color: coral;
+        text-align: center;
+        align-self: flex-start;
+        padding-left: 0.3rem;
+        padding-right: 0.3rem;
+        margin-bottom: 1rem;
 
         h3 {
           margin-bottom: 0.8rem;
