@@ -849,7 +849,8 @@ select {
   flex-wrap: wrap;
   margin-top: 3rem; }
   .contact-us-section .contact-us-intro-text {
-    width: 70%; }
+    width: 70%;
+    text-align: center; }
   .contact-us-section .contact-us-body {
     display: flex;
     justify-content: center;
@@ -857,12 +858,8 @@ select {
     align-items: center;
     flex-wrap: wrap;
     background-color: rgba(100, 100, 100, 0.1);
-    width: 70%;
+    width: 100%;
     border-radius: 3px;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
     margin-top: 2rem; }
     .contact-us-section .contact-us-body .contact-form-error {
       background-color: #CE5667;
@@ -880,6 +877,7 @@ select {
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
+      margin-top: 4rem;
       border: solid 2px #3D3D3D;
       width: 5rem;
       height: 5rem;
@@ -891,7 +889,8 @@ select {
       align-items: center;
       flex-wrap: wrap;
       width: 35rem;
-      margin-top: 3rem; }
+      margin-top: 3rem;
+      margin-bottom: 1rem; }
       .contact-us-section .contact-us-body form input {
         height: 2.5em;
         width: 100%;
@@ -925,6 +924,7 @@ select {
   align-items: center;
   flex-wrap: wrap;
   margin-top: 3rem;
+  margin-bottom: 2rem;
   padding-left: 3rem;
   padding-right: 3rem; }
   .services-section .our-services-heading {
@@ -965,41 +965,17 @@ select {
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
-      width: 70%;
-      border-radius: 3px;
-      padding-top: 8rem;
-      padding-bottom: 8rem;
-      padding-left: 2rem;
-      padding-right: 2rem; }
-      .contact-us-section .contact-us-body form {
-        width: 90%; } }
+      width: 70%; } }
 @media all and (max-width: 1060px) and (min-width: 950px) {
   .discovery-section-wrapper .discovery-section {
     width: 90%; } }
 @media all and (max-width: 950px) and (min-width: 750px) {
   .discovery-section-wrapper .discovery-section {
-    width: 95%; }
+    width: 95%;
+    padding-top: 0; }
 
-  .contact-us-section {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap; }
-    .contact-us-section .contact-us-body {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-      width: 90%;
-      border-radius: 3px;
-      padding-top: 8rem;
-      padding-bottom: 8rem;
-      padding-left: 2rem;
-      padding-right: 2rem; }
-      .contact-us-section .contact-us-body form {
-        width: 90%; } }
+  .contact-us-section .contact-us-body {
+    width: 100%; } }
 @media all and (max-width: 750px) and (min-width: 400px) {
   .services-section .services-intro-body {
     width: 100%; }
@@ -1035,6 +1011,9 @@ select {
       width: 90%; }
 
   .testimonial-section .testimonial {
+    width: 90%; }
+
+  .contact-us-section .contact-us-body form {
     width: 90%; } }
 @media all and (max-width: 550px) and (min-width: 400px) {
   .discovery-section {

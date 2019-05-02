@@ -717,6 +717,7 @@ width: 90%;
 
   .contact-us-intro-text {
     width: 70%;
+    text-align: center;
   }
 
   .contact-us-body {
@@ -726,12 +727,13 @@ width: 90%;
     align-items: center;
     flex-wrap: wrap;
     background-color: $gray-100;
-    width: 70%;
+    // width: 70%;
+    width: 100%;
     border-radius: 3px;
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 2rem;
-    padding-right: 2rem;
+    // padding-top: 4rem;
+    // padding-bottom: 4rem;
+    // padding-left: 2rem;
+    // padding-right: 2rem;
     margin-top: 2rem;
 
     .contact-form-error {
@@ -754,6 +756,7 @@ width: 90%;
       flex-direction: column;
       align-items: center;
       flex-wrap: wrap;
+      margin-top: 4rem;
 
       border: solid 2px $smokey-black;
       width: 5rem;
@@ -770,6 +773,7 @@ width: 90%;
       // background-color: $smoothie-red;
       width: 35rem;
       margin-top: 3rem;
+      margin-bottom: 1rem;
 
       input {
         height: 2.5em;
@@ -821,6 +825,7 @@ width: 90%;
   align-items: center;
   flex-wrap: wrap;
   margin-top: 3rem;
+  margin-bottom: 2rem;
   padding-left: 3rem;
   padding-right: 3rem;
 
@@ -890,15 +895,10 @@ width: 90%;
       flex-wrap: wrap;
       // background-color: $mint-green;
       width: 70%;
-      border-radius: 3px;
-      padding-top: 8rem;
-      padding-bottom: 8rem;
-      padding-left: 2rem;
-      padding-right: 2rem;
 
-      form {
-        width: 90%;
-    }
+    //   form {
+    //     width: 90%;
+    // }
   }
 }
 }
@@ -916,35 +916,16 @@ width: 90%;
     .discovery-section-wrapper  {
       .discovery-section {
         width: 95%;
+        padding-top: 0;
         // background-color: coral;
       }
     }
 
 
     .contact-us-section {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
-
       .contact-us-body {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-        flex-wrap: wrap;
-        // background-color: $berry-purple;
-        width: 90%;
-        border-radius: 3px;
-        padding-top: 8rem;
-        padding-bottom: 8rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
-
-        form {
-          width: 90%;
-      }
+        width: 100%;
+        // background-color: $smoothie-red;
     }
   }
 }
@@ -960,6 +941,8 @@ width: 90%;
         width: 100%;
       }
     }
+
+
   }
 
   .discovery-section-wrapper {
@@ -1019,6 +1002,16 @@ width: 90%;
       width: 90%;
     }
   }
+
+  .contact-us-section {
+    .contact-us-body {
+      // background-color: coral;
+
+      form {
+        width: 90%;
+    }
+  }
+}
 }
 
 @media all and (max-width: 550px) and (min-width: 400px) {
