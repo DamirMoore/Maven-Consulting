@@ -568,7 +568,9 @@ select {
 
 .make-sticky {
   position: sticky;
-  bottom: 0; }
+  bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 .discovery-section-modal-form {
   display: flex;
@@ -925,6 +927,8 @@ select {
   margin-top: 3rem;
   padding-left: 3rem;
   padding-right: 3rem; }
+  .services-section .our-services-heading {
+    font-size: 250%; }
   .services-section .services-intro-body {
     text-align: center;
     width: 70%; }

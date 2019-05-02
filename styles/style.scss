@@ -305,6 +305,8 @@ width: 90%;
 .make-sticky {
   position: sticky;
   bottom: 0;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 
 
@@ -821,6 +823,10 @@ width: 90%;
   margin-top: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
+
+  .our-services-heading {
+    font-size: 250%;
+  }
 
   .services-intro-body {
     text-align: center;
