@@ -19,7 +19,7 @@
     <!-- <h1>Logo</h1>
     <h1>Maven Consulting</h1> -->
     <div style="width: 250px; height: 250px;">
-      <img data-src="images/logo.png" width="100%" height="100%" alt="Maven Consulting Logo" uk-img />
+      <img data-src="images/Maven Consulting Logo3.png" width="100%" height="100%" alt="Maven Consulting Logo" uk-img />
     </div>
     <div class="navbar">
       <a href="index.html">Home</a>
@@ -143,6 +143,56 @@
           </div> -->
     </div>
   </section>
+
+  <!-- discovery session sticky message -->
+  <div class="discovery-sticky make-sticky">
+    <p>Get free 30 minute discovery session.</p>
+    <button class="discovery-sticky-button" uk-toggle="target: #discovery-modal">Schedule Discovery Session</button>
+    <span class="sticky-discovery-close" uk-icon="icon: close" onclick="closeStickyDiscovery()"></span>
+  </div>
+
+  <!-- Discovery Session Modal -->
+  <div id="discovery-modal" uk-modal>
+    <form class="discovery-section-modal-form uk-modal-dialog uk-modal-body" method="POST"
+      action="https://formspree.io/mavenconsultingincorporated@gmail.com">
+      <h1 class="uk-modal-title discovery-align-center">Discovery Session</h1>
+      <p class="free-30min-session discovery-align-center">Get a free 30 minute discovery session.</p>
+      <div class="flex">
+        <div class="discovery-input-label-section">
+          <span class="discovery-input-label">Your Name</span>
+          <input class="discovery-input-name discovery-form-name" name="Name" type="text" />
+        </div>
+        <div class="discovery-input-label-section">
+          <span class="discovery-input-label">Your Business's Name</span>
+          <input class="discovery-input-name discovery-form-business-name" name="Business Name" type="text" />
+        </div>
+      </div>
+      <div class="discovery-input-section2">
+        <div class="discovery-input-label-section">
+          <span class="discovery-input-label">Your Email</span>
+          <input class="discovery-input discovery-form-email" name="Email" type="email" />
+        </div>
+        <div class="discovery-input-label-section">
+          <span class="discovery-input-label">What Brought You Here?</span>
+          <textarea class="discovery-textarea-input discovery-form-what-brought-you" name="What Brought You Here"
+            cols="30" rows="10"></textarea>
+        </div>
+        <div class="discovery-input-label-section">
+          <span class="discovery-input-label">What Are Your Top Priorities?</span>
+          <textarea class="discovery-textarea-input discovery-form-top-priorities" name="Top Priorities" cols="30"
+            rows="10"></textarea>
+        </div>
+      </div>
+      <p class="discovery-error discovery-hide-error">
+        Error! All fields must be completed.
+      </p>
+      <div class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</div>
+      <!-- <button class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</button> -->
+      <p class="discovery-align-center">Places are strictly limited so please provide as much detail as possible!</p>
+      <input class="discovery-real-button" type="submit" value="real discovery submit button">
+      <span class="uk-modal-close discovery-modal-close" uk-icon="icon: close"></span>
+    </form>
+  </div>
 
   <!-- Footer Section -->
   <section class="footer">

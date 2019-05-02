@@ -21,7 +21,7 @@
     <!-- <h1>Logo</h1>
     <h1>Maven Consulting</h1> -->
     <div style="width: 250px; height: 250px;">
-      <img data-src="images/logo.png" width="100%" height="100%" alt="Maven Consulting Logo" uk-img />
+      <img data-src="images/Maven Consulting Logo3.png" width="100%" height="100%" alt="Maven Consulting Logo" uk-img />
     </div>
     <div class="navbar">
       <a href="index.html">Home</a>
@@ -33,6 +33,14 @@
   </section>
 
 
+
+  <!-- Free consultation mini section -->
+  <section class="free-consultation-section">
+    <a class="free-consultation-button" href="#discovery">Free 30 Min Discovery
+      Session</a>
+  </section>
+
+
   <!-- Jumbotron Section -->
   <section class="jumbotron">
     <img src="images/grunge-divider-top-white2.png" alt="Maven Consulting Grunge Top" />
@@ -41,17 +49,20 @@
         <img class="jumbotron-item-img" data-src="images/brand-design2.png" alt="Maven Consulting Digital Marketing"
           width="100%" height="100%" uk-img />
         <h2>Digital Marketing</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea unde atque, facere expedita molestias,
-          laboriosam omnis modi. Iste nam repellat in aperiam dolor maiores libero vitae vero suscipit amet! Ea?</p>
+        <p>
+          Are your potential customers finding your website or your competitors? we can help increase your online
+          visibility, drive targeted traffic, improve conversion rates, and get you more customers.
+        </p>
         <button class="jumbotron-item-button">Learn More</button>
       </div>
       <div class="jumbotron-item">
         <img class="jumbotron-item-img" data-src="images/web-design2.png"
           alt="Maven Consulting Website/Application Development" width="100%" height="100%" uk-img />
-        <h2>Website/Application Development</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto soluta provident nesciunt libero voluptatem
-          accusamus, cupiditate molestias voluptas distinctio odit officiis quaerat optio modi possimus ea aliquam, et
-          hic illo.</p>
+        <h2>Website Design/Development</h2>
+        <p>
+          Your website doesn't exist just to look good. We build stunning websites that look great across devices,
+          engage your audience, communicate your message, build brand awareness and more!
+        </p>
         <button class="jumbotron-item-button">Learn More</button>
       </div>
       <div class="jumbotron-item">
@@ -80,64 +91,93 @@
     </div>
   </section>
 
-  <!-- Testimonials Section -->
-  <!-- <section class="testimonials">
-    Testimonials Section
+  <!-- This will eventually be the glory banner section. But for now it will be the testimonial section -->
+  <!-- Glory Banner Section -->
+  <!-- <section class="glory-banner">
+    Glory Banner Section
   </section> -->
+
+  <!-- Testimonials Section -->
+  <section class="testimonial-section">
+    <img src="images/grunge-divider-top-white2.png" alt="Maven Consulting Grunge Top" />
+    <div class="testimonial">
+      <h2>What Our Clients Say</h2>
+      <p>
+        "Maven Consulting has gone above and beyond my expectations with easy communication and ingenuity. The work that
+        was provided is excellent. I will most definitely work with them again." —Gabriella, Director of Nordikuh
+      </p>
+    </div>
+    <img src="images/grunge-divider-bottom-white4.png" alt="Maven Consulting Grunge Bottom" />
+  </section>
 
   <!-- Portfolio Section -->
   <section class="portfolio-sample-section-wrapper">
     <h1 class="our-work-title heading-large">Our Work</h1>
-    <div class="portfolio-sample-section">
-      <div class="portfolio-sample-item">
-        <img class="portfolio-item-child" src="images/BabyBearPortfolio.jpg" alt="Maven Consulting Portfolio Item" />
+    <div class="portfolio-gif-section-wrapper">
+      <div class="portfolio-sample-section">
+        <div class="portfolio-sample-item">
+          <img class="portfolio-item-child" data-src="images/logo design/portfolio-item5.gif"
+            alt="Maven Consulting Portfolio Item" width="100%" height="100%" uk-img />
+        </div>
+        <div class="portfolio-sample-item">
+          <img class="portfolio-item-child" data-src="images/logo design/maven consulting.gif"
+            alt="Maven Consulting Portfolio Item" width="100%" height="100%" uk-img />
+        </div>
       </div>
-      <div class="portfolio-sample-item">
-        <img class="portfolio-item-child" src="images/JupiterPortfolio.jpg" alt="Maven Consulting Portfolio Item" />
+      <div class="portfolio-sample-section">
+        <div class="portfolio-sample-item">
+          <img class="portfolio-item-child" data-src="images/logo design/maven consulting.gif"
+            alt="Maven Consulting Portfolio Item" width="100%" height="100%" uk-img />
+        </div>
+        <div class="portfolio-sample-item">
+          <img class="portfolio-item-child" data-src="images/logo design/portfolio-item5.gif"
+            alt="Maven Consulting Portfolio Item" width="100%" height="100%" uk-img />
+        </div>
       </div>
     </div>
-    <div class="portfolio-sample-section">
-      <div class="portfolio-sample-item">
-        <img class="portfolio-item-child" src="images/PoseidonPortfolio.jpg" alt="Maven Consulting Portfolio Item" />
-      </div>
-      <div class="portfolio-sample-item">
-        <img class="portfolio-item-child" src="images/ImpizePortfolio.jpg" alt="Maven Consulting Portfolio Item" />
-      </div>
-    </div>
+    <a href="portfolio.html" class='portfolio-sample-section-button'>See More</a>
   </section>
 
   <!-- Discovery Session -->
   <section class="discovery-section-wrapper">
-    <div class="discovery-section">
+    <form id="discovery" class="discovery-section" method="POST"
+      action="https://formspree.io/mavenconsultingincorporated@gmail.com">
       <h1>Discovery Session</h1>
       <p class="free-30min-session">Get a free 30 minute discovery session.</p>
       <div class="flex">
         <div class="discovery-input-label-section">
           <span class="discovery-input-label">Your Name</span>
-          <input class="discovery-input-name" type="text" placeholder="" />
+          <input class="discovery-input-name discovery-form-name" name="Name" type="text" />
         </div>
         <div class="discovery-input-label-section">
           <span class="discovery-input-label">Your Business's Name</span>
-          <input class="discovery-input-name" type="text" placeholder="" />
+          <input class="discovery-input-name discovery-form-business-name" name="Business Name" type="text" />
         </div>
       </div>
       <div class="discovery-input-section2">
         <div class="discovery-input-label-section">
           <span class="discovery-input-label">Your Email</span>
-          <input class="discovery-input" type="email" placeholder="" />
+          <input class="discovery-input discovery-form-email" name="Email" type="email" />
         </div>
         <div class="discovery-input-label-section">
-          <span class="discovery-input-label"> What Brought You Here?</span>
-          <textarea class="discovery-textarea-input" name="" cols="30" rows="10" placeholder=""></textarea>
+          <span class="discovery-input-label">What Brought You Here?</span>
+          <textarea class="discovery-textarea-input discovery-form-what-brought-you" name="What Brought You Here"
+            cols="30" rows="10"></textarea>
         </div>
         <div class="discovery-input-label-section">
           <span class="discovery-input-label">What Are Your Top Priorities?</span>
-          <textarea class="discovery-textarea-input" name="" cols="30" rows="10" placeholder=""></textarea>
+          <textarea class="discovery-textarea-input discovery-form-top-priorities" name="Top Priorities" cols="30"
+            rows="10"></textarea>
         </div>
       </div>
-      <button class="discovery-session-button">Schedule Discovery Session</button>
+      <p class="discovery-error discovery-hide-error">
+        Error! All fields must be completed.
+      </p>
+      <div class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</div>
+      <!-- <button class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</button> -->
       <p>Places are strictly limited so please provide as much detail as possible!</p>
-    </div>
+      <input class="discovery-real-button" type="submit" value="real discovery submit button">
+    </form>
   </section>
 
   <!-- Footer Section -->

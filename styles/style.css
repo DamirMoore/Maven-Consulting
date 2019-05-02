@@ -377,7 +377,8 @@ body, html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  scroll-behavior: smooth; }
 
 body {
   color: #3D3D3D; }
@@ -460,40 +461,161 @@ select {
     justify-content: center;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     flex-wrap: wrap;
     margin-left: 1em; }
     .we-stand-with-you-section .we-stand-text-part h1 {
       font-size: 3.2rem; }
     .we-stand-with-you-section .we-stand-text-part p {
       font-size: 110%;
-      font-weight: 300; }
+      font-weight: 300;
+      width: 90%; }
+
+.testimonial-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(100, 100, 100, 0.1); }
+  .testimonial-section .testimonial {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 85%; }
+    .testimonial-section .testimonial h2 {
+      margin-bottom: 1rem; }
 
 .portfolio-sample-section-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-top: 5em; }
-  .portfolio-sample-section-wrapper .portfolio-sample-section {
+  .portfolio-sample-section-wrapper .portfolio-sample-section-button {
+    background-color: rgba(100, 100, 100, 0.1);
+    border-radius: 30px;
+    height: 2.5em;
+    width: 10em;
+    font-size: 1em;
+    border: none;
+    margin-top: 3rem;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    color: #3D3D3D; }
+  .portfolio-sample-section-wrapper .portfolio-sample-section-button:hover {
+    background-color: rgba(100, 100, 100, 0.2);
+    text-decoration: none; }
+  .portfolio-sample-section-wrapper .portfolio-gif-section-wrapper .portfolio-sample-section {
     display: flex;
     justify-content: center;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     /*    margin-bottom: 10em;*/ }
+    .portfolio-sample-section-wrapper .portfolio-gif-section-wrapper .portfolio-sample-section .portfolio-sample-item {
+      /*    background-color: lightgray;*/
+      width: 400px;
+      margin-left: 1em;
+      margin-top: 3em;
+      cursor: pointer;
+      display: flex;
+      justify-content: center; }
+      .portfolio-sample-section-wrapper .portfolio-gif-section-wrapper .portfolio-sample-section .portfolio-sample-item .portfolio-item-child {
+        background-color: #33BDB5;
+        width: 100%;
+        height: 100%; }
   .portfolio-sample-section-wrapper .our-work-title {
     position: relative;
     z-index: 1;
     text-align: center; }
-  .portfolio-sample-section-wrapper .portfolio-sample-item {
-    /*    background-color: lightgray;*/
-    width: 400px;
-    height: 400px;
-    margin-left: 1em;
-    margin-top: 1em;
+
+.discovery-sticky {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #33BDB5;
+  color: #fff;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 4rem; }
+  .discovery-sticky p {
+    align-self: center; }
+  .discovery-sticky span {
     cursor: pointer;
+    position: absolute;
+    right: 1.5rem;
+    top: 1.8rem; }
+  .discovery-sticky .discovery-sticky-button {
+    border: solid 1px coral;
+    border-radius: 30px;
+    color: #fff;
+    background-color: coral;
+    padding-top: 0.8rem;
+    padding-bottom: 0.8rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    margin-left: 1rem; }
+  .discovery-sticky .discovery-sticky-button:hover {
+    opacity: 0.9; }
+
+.make-sticky {
+  position: sticky;
+  bottom: 0; }
+
+.discovery-section-modal-form {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+  .discovery-section-modal-form .discovery-session-button {
+    background-color: coral;
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
     display: flex;
-    justify-content: center; }
-  .portfolio-sample-section-wrapper .portfolio-item-child {
-    background-color: #33BDB5;
-    width: 100%;
-    height: 100%; }
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    border-radius: 30px;
+    cursor: pointer; }
+  .discovery-section-modal-form .discovery-align-center {
+    align-self: center;
+    text-align: center; }
+  .discovery-section-modal-form .discovery-session-button:hover {
+    opacity: 0.9; }
+  .discovery-section-modal-form .discovery-real-button {
+    visibility: hidden; }
+  .discovery-section-modal-form .discovery-modal-close {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    cursor: pointer; }
+  .discovery-section-modal-form .discovery-input-label-section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem; }
+  .discovery-section-modal-form .discovery-error {
+    background-color: #CE5667;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 4em;
+    padding-left: 4em;
+    color: #fff;
+    margin-top: 2rem;
+    text-align: center; }
+  .discovery-section-modal-form .discovery-hide-error {
+    display: none; }
 
 .discovery-section-wrapper {
   display: flex;
@@ -518,6 +640,20 @@ select {
     .discovery-section-wrapper .discovery-section .free-30min-session {
       margin-top: -0.5em;
       margin-bottom: 2em; }
+    .discovery-section-wrapper .discovery-section .discovery-error {
+      background-color: #CE5667;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      padding-right: 4em;
+      padding-left: 4em;
+      color: #fff;
+      margin-top: 2rem; }
+    .discovery-section-wrapper .discovery-section .discovery-hide-error {
+      display: none; }
+    .discovery-section-wrapper .discovery-section .discovery-real-button {
+      position: relative;
+      right: 100em;
+      visibility: hidden; }
     .discovery-section-wrapper .discovery-section .discovery-session-button {
       width: 25em;
       height: 3em;
@@ -529,7 +665,11 @@ select {
       border: none;
       background-color: coral;
       margin-top: 2em;
-      margin-bottom: 0.2em; }
+      margin-bottom: 0.2em;
+      display: flex;
+      align-self: center;
+      align-items: center;
+      justify-content: center; }
     .discovery-section-wrapper .discovery-section .discovery-session-button:hover {
       opacity: 0.9; }
     .discovery-section-wrapper .discovery-section .discovery-input {
@@ -603,6 +743,25 @@ select {
           border-radius: 3px;
           border: solid 1px #adb5bd; }
 
+.free-consultation-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 2rem; }
+  .free-consultation-section .free-consultation-button {
+    border: solid 1px #33BDB5;
+    background-color: #33BDB5;
+    color: #fff;
+    border-radius: 30px;
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    padding-left: 2em;
+    padding-right: 2em; }
+  .free-consultation-section .free-consultation-button:hover {
+    border: solid 1px #33BDB5;
+    background-color: #fff;
+    color: #3D3D3D;
+    text-decoration: none; }
+
 .jumbotron {
   background-color: rgba(100, 100, 100, 0.1);
   /*    padding-top: 3em;*/
@@ -646,6 +805,8 @@ select {
   flex-direction: column;
   align-items: center;
   flex-wrap: wrap; }
+  .navbar-section img {
+    margin-top: 1rem; }
   .navbar-section .navbar {
     padding-top: 1rem;
     padding-bottom: 1rem;
@@ -701,6 +862,16 @@ select {
     padding-left: 2rem;
     padding-right: 2rem;
     margin-top: 2rem; }
+    .contact-us-section .contact-us-body .contact-form-error {
+      background-color: #CE5667;
+      color: #fff;
+      padding-top: 0.5em;
+      padding-bottom: 0.5em;
+      padding-left: 4em;
+      padding-right: 4em;
+      margin-bottom: 1rem; }
+    .contact-us-section .contact-us-body .contact-hide-error {
+      display: none; }
     .contact-us-section .contact-us-body .contact-us-mail-icon-wrapper {
       display: flex;
       justify-content: center;
@@ -735,7 +906,9 @@ select {
         background-color: #33BDB5;
         color: #fff;
         border: none;
-        font-size: 110%; }
+        border-radius: 30px;
+        font-size: 110%;
+        cursor: pointer; }
         .contact-us-section .contact-us-body form .contact-us-button:hover {
           opacity: 0.9; }
       .contact-us-section .contact-us-body form .contact-us-real-button {
@@ -855,7 +1028,10 @@ select {
     .discovery-section-wrapper .discovery-section .discovery-textarea-input {
       width: 100%; }
     .discovery-section-wrapper .discovery-section .discovery-session-button {
-      width: 90%; } }
+      width: 90%; }
+
+  .testimonial-section .testimonial {
+    width: 90%; } }
 @media all and (max-width: 550px) and (min-width: 400px) {
   .discovery-section {
     width: 90%;

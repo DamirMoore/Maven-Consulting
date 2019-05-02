@@ -9,16 +9,67 @@ function submitContactForm() {
   var name = document.querySelector('.contact-name').value;
   var email = document.querySelector('.contact-email').value;
   var message = document.querySelector('.contact-message').value;
+  var error = document.querySelector('.contact-form-error');
 
   console.log('name:', name);
   console.log('email:', email);
   console.log('message:', message);
 
-
   if (name != '' && email != '' && message != '') {
+    // no error occured
     console.log('form submitted');
-    // document.querySelector('.contact-us-real-button').click();
+    console.log('error :', error);
+    if (!document.querySelector('.contact-form-error').classList.contains('contact-hide-error')) {
+      error.classList.add('contact-hide-error');
+    }
+    document.querySelector('.contact-us-real-button').click();
   } else {
+    // error occured
     console.log('Error: All fields must be filled out.');
+    console.log('error :', error);
+    if (document.querySelector('.contact-form-error').classList.contains('contact-hide-error')) {
+      error.classList.remove('contact-hide-error');
+    }
   }
+}
+
+function submitDiscoveryForm() {
+  console.log('discovery form submitted');
+  var name = document.querySelector('.discovery-form-name').value;
+  var businessName = document.querySelector('.discovery-form-business-name').value;
+  var email = document.querySelector('.discovery-form-email').value;
+  var whatBroughtYou = document.querySelector('.discovery-form-what-brought-you').value;
+  var topPriorities = document.querySelector('.discovery-form-top-priorities').value;
+  var error = document.querySelector('.discovery-error');
+
+  console.log('name:', name);
+  console.log('businessName:', businessName);
+  console.log('email:', email);
+  console.log('whatBroughtYou:', whatBroughtYou);
+  console.log('topPriorities:', topPriorities);
+
+  if (name != '' && businessName != '' && email != '' && whatBroughtYou != '' && topPriorities != '') {
+    // no error occured
+    console.log('discovery form submitted');
+
+    if (!error.classList.contains('discovery-hide-error')) {
+      error.classList.add('discovery-hide-error');
+    }
+    document.querySelector(".discovery-real-button").click();
+  } else {
+    // error occured
+    console.log('Error: All fields must be filled out.');
+    if (error.classList.contains('discovery-hide-error')) {
+      error.classList.remove('discovery-hide-error');
+    }
+  }
+
+}
+
+
+function closeStickyDiscovery() {
+  var sticky = document.querySelector('.discovery-sticky');
+
+  sticky.classList.remove('make-sticky');
+  console.log('sticky discovery closed');
 }
