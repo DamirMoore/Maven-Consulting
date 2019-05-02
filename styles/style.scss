@@ -739,6 +739,39 @@ width: 90%;
   .about-us-body {
     width: 70%;
   }
+
+  .about-intro-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $gray-100;
+    text-align: center;
+
+    p {
+      width: 90%;
+    }
+  }
+
+  .our-values-main-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .our-values-group {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+
+      .our-values-group-item {
+        width: 20rem;
+        // background-color: coral;
+        text-align: center;
+      }
+    }
+  }
 }
 
 
