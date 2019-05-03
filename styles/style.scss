@@ -120,22 +120,22 @@ select {
 //    border: solid 1px $gray-100;
 
   .we-stand-icon-wrapper {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    flex-wrap: wrap;
-    border: solid 3px $smokey-black;
-    height: 6rem;
-    width: 6rem;
-    border-radius: 50%;
+    // display: flex;
+    // justify-content: center;
+    // flex-direction: column;
+    // align-items: center;
+    // flex-wrap: wrap;
+    // border: solid 3px $smokey-black;
+    height: 9rem;
+    width: 9rem;
+    // border-radius: 50%;
 
     .we-stand-icon {
       // border: solid 3px $smokey-black;
       // border-radius: 50%;
       // height: 6rem;
       // width: 6rem;
-      font-size: 370%;
+      // font-size: 370%;
     }
   }
 
@@ -194,6 +194,82 @@ width: 90%;
 
 
 
+.pulse-coral {
+  animation: pulse-coral 2s linear infinite;
+}
+@keyframes pulse-coral {
+  0% {
+    box-shadow: 0 0 0 0 rgba(255, 127, 80, 0.7);
+  }
+
+  40% {
+    box-shadow: 0 0 0 20px rgba(255, 127, 80, 0);
+  }
+
+  80% {
+    box-shadow: 0 0 0 20px rgba(255, 127, 80, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(255, 127, 80, 0);
+  }
+}
+
+
+// Pulse Button
+.pulse-button-test {
+  background-color: $lollipop-blue;
+  color: #fff;
+  width: 15rem;
+  height: 4rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-radius: 30px;
+  margin: auto;
+  margin-top: 3rem;
+  animation: animate 2s linear infinite;
+
+}
+
+.pulse {
+  animation: pulse-lollipop-blue 2s linear infinite;
+}
+@keyframes pulse-lollipop-blue {
+  0% {
+    box-shadow: 0 0 0 0 rgba(50, 189, 182, 0.7);
+  }
+
+  40% {
+    box-shadow: 0 0 0 20px rgba(50, 189, 182, 0);
+  }
+
+  80% {
+    box-shadow: 0 0 0 20px rgba(50, 189, 182, 0);
+  }
+
+  100% {
+    box-shadow: 0 0 0 0 rgba(50, 189, 182, 0);
+  }
+
+  // 0% {
+  //   box-shadow: 0 0 0 0 rgba(225,109,74,0.7), 0 0 0 0 rgba (255, 109, 74, 0.7);
+  // }
+
+  // 40% {
+  //   box-shadow: 0 0 0 50px rgba(225,109,74,0), 0 0 0 0 rgba (255, 109, 74, 0.7);
+  // }
+
+  // 80% {
+  //   box-shadow: 0 0 0 50px rgba(225,109,74,0), 0 0 0 30px rgba (255, 109, 74, 0);
+  // }
+
+  // 100% {
+  //   box-shadow: 0 0 0 0 rgba(225,109,74,0), 0 0 0 30px rgba (255, 109, 74, 0);
+  // }
+}
+
+
+
 
 // Portfolio Setion
 .portfolio-sample-section-wrapper {
@@ -202,6 +278,11 @@ width: 90%;
   align-items: center;
   margin-top: 5em;
   // background-color: $mint-green;
+
+  .our-work-icon-wrapper {
+    width: 9rem;
+    height: 9rem;
+  }
 
   .portfolio-sample-section-button {
     background-color: $gray-100;
@@ -782,8 +863,8 @@ width: 90%;
         // background-color: coral;
         text-align: center;
         align-self: flex-start;
-        padding-left: 0.3rem;
-        padding-right: 0.3rem;
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
         margin-bottom: 1rem;
 
         h3 {
@@ -843,17 +924,17 @@ width: 90%;
     }
 
     .contact-us-mail-icon-wrapper {
-      display: flex;
-      justify-content: center;
-      flex-direction: column;
-      align-items: center;
-      flex-wrap: wrap;
+      // display: flex;
+      // justify-content: center;
+      // flex-direction: column;
+      // align-items: center;
+      // flex-wrap: wrap;
       margin-top: 4rem;
 
-      border: solid 2px $smokey-black;
-      width: 5rem;
-      height: 5rem;
-      border-radius: 50%;
+      // border: solid 2px $smokey-black;
+      width: 8rem;
+      height: 8rem;
+      // border-radius: 50%;
     }
 
     form {

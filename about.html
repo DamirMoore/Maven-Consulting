@@ -50,12 +50,19 @@
       <img src="images/grunge-divider-bottom-white4.png" alt="Maven Consulting Grunge Bottom" />
     </div>
 
-    <h1 class="about-heading">The 6 Maven Values</h1>
+    <h1 class="about-heading">The 7 Maven Values</h1>
     <div class="our-values-main-body">
       <div class="our-values-group">
         <div class="our-values-group-item">
           <img src="images/services-icon.png" alt="Maven Consulting about page.">
-          <h3>Be Transparent</h3>
+          <h3>Be Loyal</h3>
+          <p>During this phase we find the project attributes during the free Discovery Session.</p>
+        </div>
+      </div>
+      <div class="our-values-group">
+        <div class="our-values-group-item">
+          <img src="images/services-icon.png" alt="Maven Consulting about page.">
+          <h3>Take Responsibility</h3>
           <p>During this phase we find the project attributes during the free Discovery Session.</p>
         </div>
 
@@ -67,7 +74,7 @@
 
         <div class="our-values-group-item">
           <img src="images/services-icon.png" alt="Maven Consulting about page.">
-          <h3>Take Responsibility</h3>
+          <h3>Be Transparent</h3>
           <p>
             UI elements, typography, and color schemes are selected based on branding requirements and our design
             research
@@ -90,8 +97,8 @@
           <img src="images/services-icon.png" alt="Maven Consulting about page.">
           <h3>Be a Leader</h3>
           <p>
-            Our quality assurance team performs tests to ensure that each feature works properly and performs to
-            expectation.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta omnis eligendi quam! Amet reiciendis
+            voluptas quos delectus.
           </p>
         </div>
 
@@ -99,7 +106,8 @@
           <img src="images/services-icon.png" alt="Maven Consulting about page.">
           <h3>Don't Settle</h3>
           <p>
-            Our web maintenance team monitors ongoing performance in the long-term to prevent issues from occurring.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet dicta omnis eligendi quam! Amet reiciendis
+            voluptas quos delectus.
           </p>
         </div>
       </div>
@@ -162,7 +170,8 @@
   <!-- discovery session sticky message -->
   <div class="discovery-sticky make-sticky make-sticky-large">
     <p>Get free 30 minute discovery session.</p>
-    <button class="discovery-sticky-button" uk-toggle="target: #discovery-modal">Schedule Discovery Session</button>
+    <button class="discovery-sticky-button pulse-coral" uk-toggle="target: #discovery-modal">Schedule Discovery
+      Session</button>
     <span class="sticky-discovery-close" uk-icon="icon: close" onclick="closeStickyDiscovery()"></span>
   </div>
 
@@ -170,6 +179,10 @@
   <div id="discovery-modal" uk-modal>
     <form class="discovery-section-modal-form uk-modal-dialog uk-modal-body" method="POST"
       action="https://formspree.io/mavenconsultingincorporated@gmail.com">
+      <div style="width: 9rem; height: 9rem; align-self: center;">
+        <img data-src="images/services-icon2.png" alt="Maven Consulting services page." width="100%" height="100%"
+          uk-img>
+      </div>
       <h1 class="uk-modal-title discovery-align-center">Discovery Session</h1>
       <p class="free-30min-session discovery-align-center">Get a free 30 minute discovery session.</p>
       <div class="flex">
@@ -201,7 +214,7 @@
       <p class="discovery-error discovery-hide-error">
         Error! All fields must be completed.
       </p>
-      <div class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</div>
+      <div class="discovery-session-button pulse-coral" onclick="submitDiscoveryForm()">Schedule Discovery Session</div>
       <!-- <button class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</button> -->
       <p class="discovery-align-center">Places are strictly limited so please provide as much detail as possible!</p>
       <input class="discovery-real-button" type="submit" value="real discovery submit button">
