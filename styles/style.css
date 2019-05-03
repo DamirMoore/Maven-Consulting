@@ -927,9 +927,13 @@ select {
         padding-left: 0.5rem;
         padding-right: 0.5rem;
         margin-bottom: 1rem; }
+        .about-us-section .our-values-main-body .our-values-group .our-values-group-item img {
+          width: 8rem;
+          height: 8rem; }
         .about-us-section .our-values-main-body .our-values-group .our-values-group-item h3 {
           margin-top: 0.8rem;
-          margin-bottom: 0.8rem; }
+          margin-bottom: 0.8rem;
+          font-weight: 600; }
 
 .contact-us-section {
   display: flex;
@@ -1030,9 +1034,13 @@ select {
         padding-left: 0.3rem;
         padding-right: 0.3rem;
         margin-bottom: 1rem; }
+        .services-intro-section .our-process-main-body .our-process-group .our-process-group-item img {
+          width: 8rem;
+          height: 8rem; }
         .services-intro-section .our-process-main-body .our-process-group .our-process-group-item h3 {
           margin-bottom: 0.8rem;
-          margin-top: 0.8rem; }
+          margin-top: 0.8rem;
+          font-weight: 600; }
 
 .services-section {
   display: flex;
