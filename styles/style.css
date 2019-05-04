@@ -906,7 +906,8 @@ select {
     background-color: rgba(100, 100, 100, 0.1);
     text-align: center; }
     .about-us-section .about-intro-section p {
-      width: 90%; }
+      width: 90%;
+      margin-bottom: 1.5rem; }
   .about-us-section .our-values-main-body {
     display: flex;
     flex-direction: column;
