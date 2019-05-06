@@ -567,14 +567,28 @@ select {
     text-align: center; }
 
 .discovery-sticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   background-color: #32bdb6;
   color: #fff;
-  margin-top: 4rem; }
+  margin-top: 4rem;
+  background-image: url("../images/geometric shapes on sticky discovery left side2.png"), url("../images/geometric shapes on sticky discovery right side3.png");
+  background-repeat: no-repeat;
+  background-position: 10% 75%, right;
+  background-size: 20rem; }
   .discovery-sticky p {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center; }
   .discovery-sticky span {
     cursor: pointer;
@@ -1136,7 +1150,24 @@ select {
     width: 90%; }
 
   .contact-us-section .contact-us-body form {
-    width: 90%; } }
+    width: 90%; }
+
+  .discovery-sticky {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    background-image: none;
+    background-image: url("../images/geometric shapes on sticky discovery right side3.png");
+    background-repeat: no-repeat;
+    background-position: right;
+    background-size: 29rem; }
+    .discovery-sticky .discovery-sticky-button {
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      width: 20rem;
+      margin-top: 1rem; } }
 @media all and (max-width: 550px) and (min-width: 400px) {
   .discovery-section {
     width: 90%;

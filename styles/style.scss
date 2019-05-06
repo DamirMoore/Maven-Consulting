@@ -344,18 +344,34 @@ width: 90%;
 
 // Sticky Discovery
 .discovery-sticky {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
   flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
   justify-content: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+
   background-color: $lollipop-blue;
   color: #fff;
   // padding-top: 1rem;
   // padding-bottom: 1rem;
   margin-top: 4rem;
+  background-image: url('../images/geometric shapes on sticky discovery left side2.png'), url('../images/geometric shapes on sticky discovery right side3.png');
+  background-repeat: no-repeat;
+  background-position: 10% 75%, right;
+  // background-size: 19rem;
+  background-size:  20rem;
 
 
   p {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
     align-self: center;
   }
 
@@ -1135,6 +1151,8 @@ width: 90%;
     // }
   }
 }
+
+
 }
 
 @media all and (max-width: 1060px) and (min-width: 950px) {
@@ -1162,6 +1180,8 @@ width: 90%;
         // background-color: $smoothie-red;
     }
   }
+
+
 }
 
 @media all and (max-width: 750px) and (min-width: 400px) {
@@ -1244,6 +1264,30 @@ width: 90%;
       form {
         width: 90%;
     }
+  }
+}
+
+.discovery-sticky {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+
+  // background-color: $smoothie-red;
+  background-image: none;
+  background-image: url('../images/geometric shapes on sticky discovery right side3.png');
+  background-repeat: no-repeat;
+  background-position: right;
+  // background-size: 19rem;
+  background-size:  29rem;
+
+  .discovery-sticky-button {
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+
+    width: 20rem;
+    margin-top: 1rem;
   }
 }
 }
