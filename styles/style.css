@@ -621,6 +621,7 @@ select {
 
 .make-sticky {
   position: sticky;
+  position: -webkit-sticky;
   bottom: 0; }
 
 .make-sticky-large {
@@ -1235,7 +1236,7 @@ select {
       align-self: center;
       width: 20rem;
       margin-top: 1rem; } }
-@media all and (max-width: 550px) and (min-width: 400px) {
+@media all and (max-width: 550px) and (min-width: 300px) {
   .discovery-section {
     width: 90%;
     /*        background-color: orange;*/ } }

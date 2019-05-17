@@ -414,6 +414,7 @@ width: 90%;
 
 .make-sticky {
   position: sticky;
+  position: -webkit-sticky;
   bottom: 0;
 }
 
@@ -1365,7 +1366,7 @@ justify-content: center;
 }
 }
 
-@media all and (max-width: 550px) and (min-width: 400px) {
+@media all and (max-width: 550px) and (min-width: 300px) {
     .discovery-section {
         width: 90%;
         /*        background-color: orange;*/
