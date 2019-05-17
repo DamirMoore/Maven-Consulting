@@ -363,6 +363,7 @@ template {
 
 @font-face {
   font-family: Westcraft;
+  font-display: auto;
   src: url(../fonts/WestcraftSans-Soft.otf); }
 a {
   text-decoration: none; }
@@ -423,6 +424,16 @@ textarea {
 
 select {
   color: #3D3D3D; }
+
+.javascript-disabled {
+  position: absolute;
+  top: 0;
+  background-color: #CE5667;
+  color: #fff;
+  width: 100%;
+  text-align: center;
+  padding-top: 1rem;
+  padding-bottom: 1rem; }
 
 .footer {
   border-top: solid 1px rgba(100, 100, 100, 0.5);

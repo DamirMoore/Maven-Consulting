@@ -15,6 +15,7 @@
   <script src='js/uikit.min.js'></script>
   <script src='js/uikit-icons.min.js'></script>
   <script src="js/respond.js/respond.js"></script>
+  <script src="js/lazysizes.js" async=""></script>
   <script src='js/main.js'></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -33,7 +34,8 @@
   <header class="navbar-section">
     <!-- <h1>Logo</h1>
       <h1>Maven Consulting</h1> -->
-    <img data-src="images/Maven Consulting Logo6.png" width="250px" height="250px" alt="Maven Consulting Logo" uk-img />
+    <img class="lazyload" data-src="images/Maven Consulting Logo6.png" src="images/image placeholder.jpg" width="250px"
+      height="250px" alt="Maven Consulting Logo" />
     <nav class="navbar">
       <a href="index.html">Home</a>
       <a href="services.html">Services</a>
@@ -43,7 +45,12 @@
     </nav>
   </header>
 
-
+  <!-- If Javascript is Disabled -->
+  <noscript>
+    <div class="javascript-disabled">
+      <p>This website requires javascript to function properly.</p>
+    </div>
+  </noscript>
 
 
   <!-- Services Intro Section -->
