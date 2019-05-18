@@ -73,3 +73,6 @@ function closeStickyDiscovery() {
   sticky.classList.remove('make-sticky');
   console.log('sticky discovery closed');
 }
+
+
+// check to see if there is a element fixed to the bottom of the page. If there is, remove the .normal-footer-padding class from the footer, and replace it with the .footer-with-fixed-message class.

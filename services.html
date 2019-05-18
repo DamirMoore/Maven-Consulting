@@ -12,6 +12,10 @@
   <!-- css imports -->
   <link rel='stylesheet' type='text/css' media='screen' href='styles/uikit.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+    integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+  <!-- js imports -->
   <script src='js/uikit.min.js'></script>
   <script src='js/uikit-icons.min.js'></script>
   <script src="js/respond.js/respond.js"></script>
@@ -165,6 +169,21 @@
         your brand's colors, fonts, and images.
       </p>
     </div>
+    <div class="services-item">
+      <img class="jumbotron-item-img lazyload" data-src="images/maintenance service icon.png"
+        src="images/image placeholder.jpg" alt="Maven Consulting Website Maintenance Services" width="200px"
+        height="200px" />
+      <h1>Maintenance</h1>
+      <p>
+        Our web maintenance package is an optional service where we monitor ongoing performance in the long-term to
+        prevent issues from occurring. This service also includes making small changes to your website and getting free
+        consultations to help you determine the best ways to utilize our services. We offer different packages so you
+        can get the best
+        value for your budget. Checkout our <a style="color: #32bdb6;" href="maintenance-packages.html">maintenance
+          packages</a> to get more
+        information and pricing.
+      </p>
+    </div>
   </main>
 
 
@@ -182,7 +201,8 @@
   </section>
 
   <!-- discovery session sticky message -->
-  <div class="discovery-sticky make-sticky-large make-sticky">
+  <!-- add .make-sticky class to fix the message to the bottom of screen -->
+  <div class="discovery-sticky make-sticky-large">
     <p>Get free 30 minute discovery session.</p>
     <button class="discovery-sticky-button pulse-coral" uk-toggle="target: #discovery-modal">Schedule Discovery
       Session</button>
@@ -239,7 +259,16 @@
 
 
   <!-- Footer Section -->
-  <footer class="footer">
+  <footer class="footer normal-footer-padding">
+    <img src="images/grunge-divider-top-white2.png" alt="Maven Consulting Grunge Top" />
+    <div class="social-media-link-section">
+      <a href="https://fb.me/MavenConsultingLLC" class="social-media-icon"><i class="fab fa-facebook-f"></i></a>
+      <a href="https://www.pinterest.com/MavenConsultingLLC/" class="social-media-icon"><i
+          class="fab fa-pinterest"></i></a>
+      <a href="https://www.instagram.com/mavenconsultingllc/" class="social-media-icon"><i
+          class="fab fa-instagram"></i></a>
+    </div>
+    <a href="privacy-policy.html">Privacy Policy</a>
     <p class="copywright privacy-footer-link">&copy; Maven Consulting LLC, 2019</p>
   </footer>
 
