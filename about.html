@@ -19,6 +19,7 @@
   <script src='js/uikit.min.js'></script>
   <script src='js/uikit-icons.min.js'></script>
   <script src="js/respond.js/respond.js"></script>
+  <script src="js/lazysizes.js" async=""></script>
   <script src='js/main.js'></script>
 
   <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -37,8 +38,11 @@
   <header class="navbar-section">
     <!-- <h1>Logo</h1>
     <h1>Maven Consulting</h1> -->
-    <div style="width: 250px; height: 250px;">
-      <img data-src="images/Maven Consulting Logo6.png" width="100%" height="100%" alt="Maven Consulting Logo" uk-img />
+    <div>
+      <a href="index.html">
+        <img class="lazyload" data-src="images/Maven Consulting Logo6.png" src="images/image placeholder.jpg"
+          width="250px" height="250px" alt="Maven Consulting Logo" />
+      </a>
     </div>
     <nav class="navbar">
       <a href="index.html">Home</a>
@@ -87,7 +91,8 @@
     <div class="our-values-main-body">
       <div class="our-values-group">
         <div class="our-values-group-item">
-          <img src="images/loyalty icon.png" alt="Maven Consulting about page.">
+          <img data-src="images/loyalty icon.png" src="images/image placeholder.jpg" width="128px" height="128px"
+            alt="Maven Consulting about page.">
           <h3 style="font-weight:600;">Be Loyal</h3>
           <p>
             It doesn't matter if you're the CEO or an intern. Lookout for your team. Show loyalty to your tribe.
