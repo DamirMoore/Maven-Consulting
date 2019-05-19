@@ -76,3 +76,13 @@ function closeStickyDiscovery() {
 
 
 // check to see if there is a element fixed to the bottom of the page. If there is, remove the .normal-footer-padding class from the footer, and replace it with the .footer-with-fixed-message class.
+
+
+// Selects the package plan in the 'select' form input.
+function setPackage(package) {
+  var packageSelected = document.querySelector('#package-plan');
+
+  console.log(package, "package selected");
+
+  packageSelected.value = package;
+}
