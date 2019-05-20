@@ -107,3 +107,35 @@ function toggleMenu() {
 
   console.log('menu toggled');
 }
+
+
+function submitMaintenanceForm() {
+  console.log('discovery form submitted');
+  var name = document.querySelector('.maintenance-form-name').value;
+  var businessName = document.querySelector('.maintenance-form-business-name').value;
+  var email = document.querySelector('.maintenance-form-email').value;
+  var questions = document.querySelector('.maintenance-form-questions').value;
+  var error = document.querySelector('.maintenance-error');
+
+  console.log('name:', name);
+  console.log('businessName:', businessName);
+  console.log('email:', email);
+  console.log('whatBroughtYou:', questions);
+
+  if (name != '' && businessName != '' && email != '' && questions != '') {
+    // no error occured
+    console.log('discovery form submitted');
+
+    if (!error.classList.contains('discovery-hide-error')) {
+      error.classList.add('discovery-hide-error');
+    }
+    document.querySelector("#maintenance-real-button").click();
+  } else {
+    // error occured
+    console.log('Error: All fields must be filled out.');
+    if (error.classList.contains('discovery-hide-error')) {
+      error.classList.remove('discovery-hide-error');
+    }
+  }
+
+}

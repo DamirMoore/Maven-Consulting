@@ -85,8 +85,8 @@
     <main class="maintenance-package-section">
         <img class="lazyload" data-src="images/maintenance icon.png" src="images/image placeholder.jpg"
             alt="Maven Consulting Website Maintenance Services" width="166px" height="166px">
-        <h1>Maintenance Packages</h1>
-        <p class="contact-us-intro-text">
+        <h1 style="text-align: center;">Maintenance Packages</h1>
+        <p style="text-align: center;">
             Choose a website maintenace package that best fits your needs.
         </p>
         <div class="maintenance-services-body">
@@ -186,12 +186,12 @@
 
     <!-- discovery session sticky message -->
     <!-- add .make-sticky class to fix the message to the bottom of screen -->
-    <div class="discovery-sticky make-sticky-large">
+    <!-- <div class="discovery-sticky make-sticky-large">
         <p>Get free 30 minute discovery session.</p>
         <button class="discovery-sticky-button pulse-coral" uk-toggle="target: #discovery-modal">Schedule Discovery
             Session</button>
         <span class="sticky-discovery-close" uk-icon="icon: close" onclick="closeStickyDiscovery()"></span>
-    </div>
+    </div> -->
 
     <!-- Discovery Session Modal -->
     <div id="discovery-modal" uk-modal>
@@ -266,22 +266,23 @@
             <div class="flex">
                 <div class="discovery-input-label-section">
                     <span class="discovery-input-label">Your Name</span>
-                    <input class="discovery-input-name discovery-form-name" name="Name" type="text" />
+                    <input class="discovery-input-name maintenance-form-name" name="Name" type="text" />
                 </div>
                 <div class="discovery-input-label-section">
                     <span class="discovery-input-label">Your Business's Name</span>
-                    <input class="discovery-input-name discovery-form-business-name" name="Business Name" type="text" />
+                    <input class="discovery-input-name maintenance-form-business-name" name="Business Name"
+                        type="text" />
                 </div>
             </div>
             <div class="discovery-input-section2">
                 <div class="discovery-input-label-section">
                     <span class="discovery-input-label">Your Email</span>
-                    <input class="discovery-input discovery-form-email" name="Email" type="email" />
+                    <input class="discovery-input maintenance-form-email" name="Email" type="email" />
                 </div>
                 <div class="discovery-input-label-section">
                     <span class="discovery-input-label">Questions or Comments?</span>
-                    <textarea class="discovery-textarea-input discovery-form-what-brought-you"
-                        name="Questions or Comments?" cols="30" rows="10"></textarea>
+                    <textarea class="discovery-textarea-input maintenance-form-questions" name="Questions or Comments?"
+                        cols="30" rows="10"></textarea>
                 </div>
                 <!-- <div class="discovery-input-label-section">
                     <span class="discovery-input-label">What Are Your Top Priorities?</span>
@@ -289,17 +290,18 @@
                         cols="30" rows="10"></textarea>
                 </div> -->
             </div>
-            <p class="discovery-error discovery-hide-error">
+            <p class="maintenance-error discovery-hide-error">
                 Error! All fields must be completed.
             </p>
-            <div class="discovery-session-button pulse-coral" onclick="submitDiscoveryForm()">
+            <div class="discovery-session-button pulse-coral" onclick="submitMaintenanceForm()">
                 <p>Get
                     <span class="maintenance-form-button-maintenance">Maintenance</span> Package</p>
             </div>
             <!-- <button class="discovery-session-button" onclick="submitDiscoveryForm()">Schedule Discovery Session</button> -->
             <!-- <p class="discovery-align-center">Places are strictly limited so please provide as much detail as possible! -->
             </p>
-            <input class="discovery-real-button" type="submit" value="real discovery submit button">
+            <input id="maintenance-real-button" class="discovery-real-button" type="submit"
+                value="real maintenance submit button">
             <span class="uk-modal-close discovery-modal-close" uk-icon="icon: close"></span>
         </form>
     </div>

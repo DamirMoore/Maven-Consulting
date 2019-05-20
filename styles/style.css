@@ -650,6 +650,16 @@ select {
         .footer2 .footer-column-container .footer-column:nth-of-type(1) a {
           margin-bottom: 0.5rem;
           margin-left: 0.2rem; }
+      .footer2 .footer-column-container .footer-column:nth-of-type(2) {
+        -webkit-box-align: start;
+        -ms-flex-align: start;
+        align-items: flex-start;
+        margin-right: 6rem; }
+        .footer2 .footer-column-container .footer-column:nth-of-type(2) h2 {
+          margin-bottom: 1rem; }
+        .footer2 .footer-column-container .footer-column:nth-of-type(2) a {
+          margin-bottom: 0.5rem;
+          margin-left: 0.2rem; }
 
 .we-stand-with-you-section {
   display: flex;
@@ -920,8 +930,18 @@ select {
     color: #fff;
     margin-top: 2rem;
     text-align: center; }
-  .discovery-section-modal-form .discovery-hide-error {
-    display: none; }
+  .discovery-section-modal-form .maintenance-error {
+    background-color: #CE5667;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+    padding-right: 4em;
+    padding-left: 4em;
+    color: #fff;
+    margin-top: 2rem;
+    text-align: center; }
+
+.discovery-hide-error {
+  display: none; }
 
 .discovery-section-wrapper {
   display: -webkit-box;
@@ -1336,6 +1356,9 @@ select {
         padding-left: 0.3rem;
         padding-right: 0.3rem;
         margin-bottom: 1rem; }
+        .services-intro-section .our-process-main-body .our-process-group .our-process-group-item p {
+          padding-left: 1rem;
+          padding-right: 1rem; }
         .services-intro-section .our-process-main-body .our-process-group .our-process-group-item img {
           width: 8rem;
           height: 8rem; }
@@ -1352,7 +1375,8 @@ select {
   flex-wrap: wrap;
   margin-bottom: 2rem;
   padding-left: 3rem;
-  padding-right: 3rem; }
+  padding-right: 3rem;
+  text-align: center; }
   .services-section .our-services-heading {
     font-size: 250%; }
   .services-section .services-item {
@@ -1361,7 +1385,8 @@ select {
     flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
-    margin-bottom: 9rem; }
+    margin-bottom: 9rem;
+    text-align: center; }
     .services-section .services-item .web-dev-title {
       margin-bottom: -1.5rem; }
     .services-section .services-item p {
@@ -1568,7 +1593,8 @@ select {
       .maintenance-package-section .maintenance-services-body .maintenance-package h1 {
         color: #32bdb6; }
       .maintenance-package-section .maintenance-services-body .maintenance-package p {
-        margin-bottom: 1rem; }
+        margin-bottom: 1rem;
+        text-align: center; }
       .maintenance-package-section .maintenance-services-body .maintenance-package button {
         margin-top: 1rem;
         padding-top: 1rem;
@@ -1586,9 +1612,6 @@ select {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
@@ -1603,8 +1626,24 @@ select {
     padding-left: 1rem;
     padding-right: 1rem; }
   .privacy-page-section .privacy-page-body {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    text-align: start;
     padding-left: 1rem;
     padding-right: 1rem; }
+    .privacy-page-section .privacy-page-body h3 {
+      margin-bottom: 1rem;
+      margin-top: 2rem; }
 
 .slide-menu-overlay {
   position: fixed;
@@ -1716,10 +1755,14 @@ select {
   .maintenance-package-section .further-maintenance-details ul {
     width: 30rem; } }
 @media all and (max-width: 750px) and (min-width: 400px) {
-  .services-section .services-intro-body {
+  .services-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
     width: 100%; }
-  .services-section .services-item p {
-    width: 100%; }
+    .services-section .services-intro-body {
+      width: 100%; }
+    .services-section .services-item p {
+      width: 100%; }
 
   .discovery-section-wrapper .discovery-section {
     width: 90%; }
@@ -1773,7 +1816,45 @@ select {
       align-self: center;
       width: 20rem;
       margin-top: 1rem; } }
+@media all and (max-width: 340px) and (min-width: 300px) {
+  .maintenance-package-section .maintenance-services-body .maintenance-package-standard-wrapper {
+    width: 90%; }
+  .maintenance-package-section .maintenance-services-body .maintenance-package {
+    width: 90%; }
+
+  .maintenance-package-section .further-maintenance-details {
+    width: 100%; } }
 @media all and (max-width: 425px) and (min-width: 300px) {
+  .discovery-section-wrapper .discovery-section {
+    width: 90%; }
+    .discovery-section-wrapper .discovery-section p {
+      width: 90%; }
+    .discovery-section-wrapper .discovery-section .flex {
+      flex-direction: column;
+      /*        background-color: green;*/
+      width: 70%; }
+      .discovery-section-wrapper .discovery-section .flex .discovery-input-label-section:first-child {
+        margin-right: 0; }
+    .discovery-section-wrapper .discovery-section .discovery-input-section2 {
+      /*        background-color: green;*/
+      width: 70%; }
+    .discovery-section-wrapper .discovery-section .discovery-input-label-section:first-child {
+      margin-right: 0; }
+    .discovery-section-wrapper .discovery-section .discovery-input-label-section {
+      width: 100%; }
+    .discovery-section-wrapper .discovery-section .discovery-input-name {
+      width: 100%; }
+    .discovery-section-wrapper .discovery-section .discovery-input-label {
+      align-self: flex-start;
+      color: #3D3D3D; }
+    .discovery-section-wrapper .discovery-section .discovery-input {
+      width: 100%;
+      margin-left: 0; }
+    .discovery-section-wrapper .discovery-section .discovery-textarea-input {
+      width: 100%; }
+    .discovery-section-wrapper .discovery-section .discovery-session-button {
+      width: 90%; }
+
   .discovery-section-modal-form .discovery-session-button p {
     width: 7rem; }
   .discovery-section-modal-form .discovery-session-button .maintenance-form-button-maintenance {
@@ -1804,8 +1885,25 @@ select {
     display: block; }
 
   .navbar-section .navbar {
-    display: none; } }
+    display: none; }
+
+  .services-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
+    width: 100%; }
+    .services-section .services-intro-body {
+      width: 100%; }
+    .services-section .services-item p {
+      width: 100%; } }
 @media all and (max-width: 550px) and (min-width: 300px) {
+  .about-us-section .about-heading {
+    text-align: center; }
+  .about-us-section .our-values-main-body .our-values-group .our-values-group-item {
+    width: 90%; }
+
+  .contact-us-section .contact-us-body form {
+    width: 90%; }
+
   .discovery-section {
     width: 90%;
     /*        background-color: orange;*/ }
@@ -1848,6 +1946,11 @@ select {
       align-items: center;
       margin-right: 0; }
     .footer2 .footer-column-container .footer-column:nth-of-type(2) {
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      margin-right: 0; }
+    .footer2 .footer-column-container .footer-column:nth-of-type(3) {
       height: 12rem; } }
 
 /*# sourceMappingURL=style.css.map */
