@@ -1743,16 +1743,18 @@ select {
   -webkit-box-direction: normal;
   -ms-flex-direction: column;
   flex-direction: column;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   margin-bottom: 4rem; }
   .portfolio-section h1 {
     text-align: center; }
   .portfolio-section img:first-of-type {
-    margin-top: 3rem; }
+    margin-top: 3rem;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    -ms-grid-row-align: center;
+    align-self: center; }
 
 @media all and (max-width: 900px) and (min-width: 870px) {
   .contact-us-section {
