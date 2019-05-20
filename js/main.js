@@ -86,3 +86,24 @@ function setPackage(package) {
 
   packageSelected.value = package;
 }
+
+
+// Open and close off-canvas menu
+function closeMenu() {
+  var menu = document.querySelector('.slide-menu-container');
+  var overlay = document.querySelector('.slide-menu-overlay');
+
+  menu.classList.add('close-menu');
+  overlay.classList.add('hide-overlay');
+  console.log('menu closed');
+}
+
+function toggleMenu() {
+  var menu = document.querySelector('.slide-menu-container');
+  var overlay = document.querySelector('.slide-menu-overlay');
+
+  menu.classList.toggle('close-menu');
+  overlay.classList.toggle('hide-overlay');
+
+  console.log('menu toggled');
+}

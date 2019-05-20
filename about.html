@@ -12,10 +12,12 @@
   <title>About Us - Maven Consulting</title>
 
   <!-- css imports -->
+  <!-- <link rel="stylesheet" href="styles/slide.css"> -->
   <link rel='stylesheet' type='text/css' media='screen' href='styles/uikit.css'>
   <link rel='stylesheet' type='text/css' media='screen' href='styles/style.css'>
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
     integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
 
   <!-- js imports -->
   <script src='js/uikit.min.js'></script>
@@ -62,6 +64,27 @@
     </div>
   </noscript>
 
+
+  <!-- Hamburger Menu -->
+  <div class="hamburger-menu-button">
+    <i onclick="toggleMenu()" class="fa fa-bars hamburger-menu-button"></i>
+  </div>
+
+  <div onclick="closeMenu()" class="slide-menu-overlay hide-overlay"></div>
+
+  <aside class="slide-menu-container close-menu">
+    <i onclick="closeMenu()" class="fa fa-times close-menu2"></i>
+    <!-- <div class="close-menu2"></div> -->
+
+    <nav class="slide-menu">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="portfolio.html">Portfolio</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </aside>
+
   <!-- About Us Main Section -->
   <section class="about-us-section">
     <div class="about-intro-section">
@@ -75,17 +98,6 @@
         and employees—identify with.
         Combine that with a quality product and website, and you have a strong business. Like most companies, our values
         reflect those of our founder—Damir Moore. See what we're all about below.
-
-        <!--
-          We focus on
-        building online brands and getting results for our clients.
-          Being cool
-        doesn’t mean a thing if we can’t produce results. So instead of trying to convince others
-        that we are one of those cool consulting companies.
-          We were
-        founded under the philosophy that drinking gourmet coffee or wearing ultra-hip sandals wasn’t the way to
-        impress
-        clients. -->
       </p>
       <img src="images/grunge-divider-bottom-white4.png" alt="Maven Consulting Grunge Bottom" />
     </div>
@@ -106,7 +118,7 @@
             height="128px" alt="Maven Consulting about page.">
           <h3 style="font-weight:600;">Value Family</h3>
           <p>
-            Family is the mose important thing in the world. Don't put other things above them.
+            Family is the most important thing in the world. Don't put other things above them.
           </p>
         </div>
       </div>

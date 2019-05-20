@@ -1179,7 +1179,7 @@ select {
       color: #666;
       margin-left: 4.5rem;
       font-weight: 500;
-      font-family: Westcraft;
+      font-family: Westcraft, sans-serif, Arial, "Helvetica Neue", Helvetica;
       font-size: 120%; }
       .navbar-section .navbar a:first-of-type {
         margin-left: 0; }
@@ -1606,6 +1606,88 @@ select {
     padding-left: 1rem;
     padding-right: 1rem; }
 
+.slide-menu-overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  background-color: #3D3D3D;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5; }
+
+.hide-overlay {
+  display: none; }
+
+.slide-menu-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: #fff;
+  width: 20rem;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  overflow-y: auto;
+  -webkit-transition: left 0.5s linear;
+  -o-transition: left 0.5s linear;
+  transition: left 0.5s linear; }
+  .slide-menu-container .close-menu2 {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    font-size: 120%;
+    cursor: pointer; }
+  .slide-menu-container .slide-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-top: 4rem;
+    width: 80%; }
+    .slide-menu-container .slide-menu a {
+      margin-bottom: 1.5rem;
+      padding-bottom: 1.5rem;
+      border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+      width: 100%;
+      font-size: 120%;
+      text-align: center;
+      color: #666666;
+      font-family: Westcraft, sans-serif, Arial, "Helvetica Neue", Helvetica; }
+      .slide-menu-container .slide-menu a:last-of-type {
+        border-bottom: none; }
+      .slide-menu-container .slide-menu a:hover {
+        color: #666666;
+        opacity: 0.8; }
+
+.close-menu {
+  left: -20rem; }
+
+.hamburger-menu-button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  color: #3D3D3D;
+  font-size: 150%;
+  cursor: pointer;
+  display: none; }
+
 @media all and (max-width: 900px) and (min-width: 870px) {
   .contact-us-section {
     display: flex;
@@ -1717,6 +1799,12 @@ select {
       align-self: center;
       width: 90%;
       margin-top: 1rem; } }
+@media all and (max-width: 600px) and (min-width: 300px) {
+  .hamburger-menu-button {
+    display: block; }
+
+  .navbar-section .navbar {
+    display: none; } }
 @media all and (max-width: 550px) and (min-width: 300px) {
   .discovery-section {
     width: 90%;
