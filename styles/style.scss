@@ -2083,6 +2083,42 @@ justify-content: center;
 
 
 
+// Portfolio Section
+.portfolio-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  margin-bottom: 4rem;
+
+  h1 {
+    // background-color: $lollipop-blue;
+    text-align: center;
+  }
+
+  img {
+    &:first-of-type {
+      margin-top: 3rem;
+    }
+  }
+}
+
+
+
+
+
 
 
 // Start of breakpoints
@@ -2534,6 +2570,7 @@ justify-content: center;
             align-items: center;
 
             margin-right: 0;
+            height: 12rem;
           }
 
           &:nth-of-type(3) {
@@ -2566,6 +2603,7 @@ justify-content: center;
             align-items: center;
 
             margin-right: 0;
+            height: 12rem;
           }
 
           &:nth-of-type(3) {
