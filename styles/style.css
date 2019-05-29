@@ -451,7 +451,8 @@ select {
   align-items: center;
   flex-wrap: wrap; }
   .footer img {
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    width: 100%; }
   .footer a {
     color: #3D3D3D; }
     .footer a:hover {
@@ -755,6 +756,36 @@ select {
   100% {
     -webkit-box-shadow: 0 0 0 0 rgba(50, 189, 182, 0);
     box-shadow: 0 0 0 0 rgba(50, 189, 182, 0); } }
+.portfolio-main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  background-color: rgba(100, 100, 100, 0.1);
+  text-align: center;
+  margin-top: 3rem; }
+  .portfolio-main-section img {
+    width: 100%; }
+    .portfolio-main-section img:first-of-type {
+      margin-bottom: 2rem;
+      width: 100%; }
+  .portfolio-main-section .portfolio-items-wrapper {
+    padding-left: 4rem;
+    padding-right: 4rem; }
+  .portfolio-main-section div {
+    margin-bottom: 2rem; }
+
 .portfolio-sample-section-wrapper {
   display: flex;
   flex-direction: column;
@@ -1216,7 +1247,8 @@ select {
   background-color: lollipop-blue;
   margin-top: 2rem; }
   .about-us-section .about-heading {
-    font-size: 250%; }
+    font-size: 250%;
+    margin-bottom: 4rem; }
   .about-us-section .about-us-body {
     width: 70%; }
   .about-us-section .about-intro-section {

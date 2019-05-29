@@ -132,6 +132,7 @@ select {
 
   img {
     margin-bottom: 3rem;
+    width: 100%;
   }
 
   a {
@@ -622,6 +623,55 @@ width: 90%;
 }
 
 
+
+.portfolio-main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+
+  background-color: $gray-100;
+  text-align: center;
+  margin-top: 3rem;
+  // padding-top: 3rem;
+
+  img {
+    &:first-of-type {
+      margin-bottom: 2rem;
+      width: 100%;
+    }
+
+    width: 100%;
+  }
+
+  .portfolio-items-wrapper {
+    // background-color: $lollipop-blue;
+
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  div {
+    margin-bottom: 2rem;
+    // background-color: $lollipop-blue;
+
+    &:last-of-type {
+      // margin-bottom: 0;
+      // background-color: coral;
+    }
+  }
+}
 
 
 // Portfolio Setion
@@ -1271,6 +1321,7 @@ justify-content: center;
 
   .about-heading {
     font-size: 250%;
+    margin-bottom: 4rem;
   }
 
   .about-us-body {
