@@ -688,18 +688,18 @@ width: 90%;
   }
 
   .portfolio-sample-section-button {
-    background-color: $gray-100;
+    background-color: $smokey-black;
     border-radius: 30px;
     height: 2.5em;
     width: 10em;
     font-size: 1em;
     border: none;
-    margin-top: 3rem;
+    margin-top: 6rem;
     display: flex;
     align-self: center;
     align-items: center;
     justify-content: center;
-    color: $smokey-black;
+    color: #fff;
   }
 
   .portfolio-sample-section-button:hover {
@@ -709,13 +709,33 @@ width: 90%;
   }
 
   .portfolio-gif-section-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+
+    background-color: $gray-100;
+    // margin-bottom: 3rem;
+    // padding-bottom: 6rem;
+
     .portfolio-sample-section {
       display: flex;
       justify-content: center;
       flex-direction: row;
-      align-items: center;
+      // align-items: center;
       flex-wrap: wrap;
     /*    margin-bottom: 10em;*/
+
+    width: 80%;
 
     .portfolio-sample-item {
       /*    background-color: lightgray;*/
@@ -2178,6 +2198,21 @@ justify-content: center;
 
 
 // Start of breakpoints
+@media all and (max-width: 3000px) and (min-width: 1500px) {
+  .portfolio-sample-section-wrapper {
+    // background-color: $gray-100;
+    .portfolio-gif-section-wrapper {
+      // background-color: $lollipop-blue;
+      background-color: #fff;
+      .portfolio-sample-section {
+      width: 60%;
+      }
+    }
+  }
+}
+
+
+
 @media all and (max-width: 900px) and (min-width: 870px) {
   .contact-us-section {
     display: flex;
@@ -2234,6 +2269,13 @@ justify-content: center;
 }
 
 @media all and (max-width: 800px) and (min-width: 550px) {
+  .portfolio-main-section {
+    .portfolio-items-wrapper {
+      margin-bottom: 5rem;
+      // background-color: $lollipop-blue;
+    }
+  }
+
 // Maintenance Packages Page
 .maintenance-package-section {
   .further-maintenance-details {
@@ -2509,6 +2551,21 @@ justify-content: center;
 }
 
 @media all and (max-width: 600px) and (min-width: 300px) {
+  .portfolio-main-section {
+    .portfolio-items-wrapper {
+      margin-bottom: 5rem;
+      // background-color: $lollipop-blue;
+    }
+  }
+
+  .portfolio-sample-section-wrapper {
+    .portfolio-gif-section-wrapper {
+      .portfolio-sample-section {
+      width: 100%;
+      }
+    }
+  }
+
     .hamburger-menu-button {
       display: block;
     }
